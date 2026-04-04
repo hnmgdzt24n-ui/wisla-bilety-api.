@@ -11,7 +11,6 @@ async function run() {
     const html = await response.text();
     const $ = cheerio.load(html);
 
-    // Usuwamy kod, żeby został sam czytelny tekst
     $('script, style, noscript, iframe, img, svg').remove();
     let bodyText = $('body').text().replace(/\s+/g, ' ').trim();
 
@@ -27,7 +26,7 @@ Dla KAŻDEGO znalezionego meczu wyciągnij:
 UWAGA DOTYCZĄCA BILETÓW:
 Na stronie liczba dostępnych biletów pojawia się jako samotna liczba (np. 15302, 850, 4120) umieszczona w okienku przy banerze meczu.
 Znajdź tę liczbę w tekście w okolicach danego meczu. 
-KRYTYCZNE: Nie pomyl liczby biletów z rokiem założenia klubu (np. 1906, 1946), obecnym rokiem (2026), godzinami (np. 19:06, 17:30) ani cenami.
+KRYTYCZNE: Nie pomyl liczby biletów z rokiem założenia klubu (np. 1906, 1946), obecnym rokiem (2026), godzinami (np. 19:06, 17:30) ani cenami. Jeśli liczby ewidentnie nie ma, wpisz 0.
 
 Zwróć wynik JAKO CZYSTY JSON:
 {
@@ -54,6 +53,13 @@ ${bodyText.substring(0, 30000)}`;
     });
 
     const responseAI = await aiReq.json();
+    
+    // Zabezpieczenie przed brakiem odpowiedzi od AI
+    if (!responseAI.candidates) {
+        console.error("🔴 Błąd od Google Gemini API:", JSON.stringify(responseAI, null, 2));
+        throw new Error("AI nie zwróciło poprawnej odpowiedzi.");
+    }
+
     let rawJson = responseAI.candidates[0].content.parts[0].text;
     let parsedData = JSON.parse(rawJson);
 
@@ -66,8 +72,15 @@ ${bodyText.substring(0, 30000)}`;
     console.log("SUKCES! Znaleziono mecze: ", JSON.stringify(output.events));
 
   } catch (error) {
-    console.error("BŁĄD KRYTYCZNY:", error);
-    process.exit(1);
+    console.error("BŁĄD KRYTYCZNY:", error.message);
+    
+    // Zapisujemy pusty plik awaryjny, żeby widget w telefonie miał co odczytać
+    const safeOutput = { 
+      updated: new Date().toLocaleString('pl-PL', { timeZone: 'Europe/Warsaw' }) + " (Czkawka AI)", 
+      events: []
+    };
+    fs.writeFileSync('events.json', JSON.stringify(safeOutput, null, 2));
+    console.log("Stworzono awaryjny plik events.json, żeby nie zawiesić telefonu.");
   }
 }
 
