@@ -4,6 +4,56 @@ import fs from 'fs';
 const API_KEY = process.env.GEMINI_API_KEY;
 const URL = "https://bilety.wislakrakow.com/";
 
+// Modele od najtańszych/najlżejszych do cięższych
+const MODELS = [
+  "gemini-2.0-flash-lite",
+  "gemini-2.0-flash",
+  "gemini-1.5-flash-8b",
+  "gemini-1.5-pro",
+];
+
+async function callGemini(model, prompt) {
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${API_KEY}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: { responseMimeType: "application/json" }
+      })
+    }
+  );
+  const data = await res.json();
+  return data;
+}
+
+async function callWithFallback(prompt) {
+  for (const model of MODELS) {
+    console.log(`🔄 Próbuję model: ${model}...`);
+    const data = await callGemini(model, prompt);
+
+    if (data.error) {
+      const code = data.error.code;
+      if (code === 429 || code === 404) {
+        console.warn(`⚠️  Model ${model} niedostępny (${code}), próbuję następny...`);
+        continue;
+      }
+      throw new Error(data.error.message);
+    }
+
+    if (!data.candidates || data.candidates.length === 0) {
+      console.warn(`⚠️  Model ${model} nie zwrócił wyników, próbuję następny...`);
+      continue;
+    }
+
+    console.log(`✅ Działa model: ${model}`);
+    return data.candidates[0].content.parts[0].text;
+  }
+
+  throw new Error("Żaden model nie jest dostępny. Sprawdź klucz API lub limity.");
+}
+
 async function run() {
   try {
     console.log("Pobieram stronę biletów...");
@@ -11,71 +61,4 @@ async function run() {
     const html = await response.text();
     const $ = cheerio.load(html);
 
-    $('script, style, noscript, iframe, img, svg').remove();
-    let bodyText = $('body').text().replace(/\s+/g, ' ').trim();
-
-    console.log("Analizuję tekst za pomocą AI...");
-    
-    const prompt = `Jesteś ekspertem biletowym. Znajdź mecze Wisły Kraków (np. Łęczna, Wrexham, Puszcza).
-Dla każdego meczu wyciągnij:
-1. Pełną nazwę (WISŁA KRAKÓW - PRZECIWNIK).
-2. Datę (YYYY-MM-DDTHH:MM:00).
-3. LICZBĘ SPRZEDANYCH BILETÓW (liczba z okienka na banerze). 
-KRYTYCZNE: Nie pomyl biletów z rokiem 1906, 2026 ani godziną.
-
-Zwróć wynik JAKO CZYSTY JSON:
-{
-  "events": [
-    {
-      "id": "MECZ_ID", 
-      "title": "WISŁA KRAKÓW - ...",
-      "date": "2026-04-15T19:00:00", 
-      "tickets": 1000 
-    }
-  ]
-}
-
-Tekst strony:
-${bodyText.substring(0, 30000)}`;
-
-    const aiReq = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${API_KEY}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { 
-          responseMimeType: "application/json" 
-        }
-      })
-    });
-
-    const responseAI = await aiReq.json();
-    
-    if (responseAI.error) {
-      console.error("🔴 Błąd API:", JSON.stringify(responseAI.error, null, 2));
-      throw new Error(responseAI.error.message);
-    }
-
-    if (!responseAI.candidates || responseAI.candidates.length === 0) {
-      throw new Error("AI nie zwróciło wyników.");
-    }
-
-    let rawJson = responseAI.candidates[0].content.parts[0].text;
-    let parsedData = JSON.parse(rawJson);
-
-    const output = { 
-      updated: new Date().toLocaleString('pl-PL', { timeZone: 'Europe/Warsaw' }), 
-      events: parsedData.events || []
-    };
-    
-    fs.writeFileSync('events.json', JSON.stringify(output, null, 2));
-    console.log("✅ SUKCES! Znaleziono mecze i zapisano plik.");
-
-  } catch (error) {
-    console.error("❌ BŁĄD:", error.message);
-    const fallback = { updated: "Błąd: " + error.message, events: [] };
-    fs.writeFileSync('events.json', JSON.stringify(fallback, null, 2));
-  }
-}
-
-run();
+    $('script, style, noscript, iframe, img, svg').remove();​​​​​​​​​​​​​​​​
