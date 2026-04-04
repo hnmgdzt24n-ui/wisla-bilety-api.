@@ -1,5 +1,5 @@
-const cheerio = require(“cheerio”);
-const fs = require(“fs”);
+import * as cheerio from “cheerio”;
+import fs from “fs”;
 
 const API_KEY = process.env.GEMINI_API_KEY;
 const TICKET_URL = “https://bilety.wislakrakow.com/”;
@@ -73,8 +73,8 @@ const prompt = [
   "Dla kazdego meczu wyciagnij:",
   "1. Pelna nazwe (WISLA KRAKOW - PRZECIWNIK).",
   "2. Date w formacie YYYY-MM-DDTHH:MM:00.",
-  "3. LICZBE SPRZEDANYCH BILETOW (liczba z okienka na banerze).",
-  "KRYTYCZNE: Nie pomyl biletow z rokiem 1906, 2026 ani godzina.",
+  "3. LICZBE SPRZEDANYCH BILETOW.",
+  "KRYTYCZNE: Nie pomyl biletow z rokiem 1906 ani 2026.",
   'Zwroc CZYSTY JSON: {"events":[{"id":"ID","title":"WISLA KRAKOW - ...","date":"2026-04-15T19:00:00","tickets":1000}]}',
   "Tekst strony:",
   bodyText.substring(0, 30000),
