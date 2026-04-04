@@ -1,7 +1,12 @@
 {
-  "name": "wisla-scraper",
+  "name": "wisla-bilety-api.",
+  "version": "1.0.0",
+  "main": "scraper.js",
   "type": "module",
+  "scripts": {
+    "start": "node scraper.js"
+  },
   "dependencies": {
-    "cheerio": "^1.0.0"
+    "puppeteer": "^22.6.0" 
   }
 }
