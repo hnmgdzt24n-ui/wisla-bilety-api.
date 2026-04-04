@@ -4,7 +4,6 @@ import fs from 'fs';
 const API_KEY = process.env.GEMINI_API_KEY;
 const URL = "https://bilety.wislakrakow.com/";
 
-// Modele od najtańszych/najlżejszych do cięższych
 const MODELS = [
   "gemini-2.0-flash-lite",
   "gemini-2.0-flash",
@@ -16,12 +15,12 @@ async function callGemini(model, prompt) {
   const res = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${API_KEY}`,
     {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { responseMimeType: "application/json" }
-      })
+        generationConfig: { responseMimeType: "application/json" },
+      }),
     }
   );
   const data = await res.json();
@@ -30,35 +29,44 @@ async function callGemini(model, prompt) {
 
 async function callWithFallback(prompt) {
   for (const model of MODELS) {
-    console.log(`🔄 Próbuję model: ${model}...`);
+    console.log("Probuje model: " + model);
     const data = await callGemini(model, prompt);
 
     if (data.error) {
       const code = data.error.code;
       if (code === 429 || code === 404) {
-        console.warn(`⚠️  Model ${model} niedostępny (${code}), próbuję następny...`);
+        console.warn("Model " + model + " niedostepny (" + code + "), probuje nastepny...");
         continue;
       }
       throw new Error(data.error.message);
     }
 
     if (!data.candidates || data.candidates.length === 0) {
-      console.warn(`⚠️  Model ${model} nie zwrócił wyników, próbuję następny...`);
+      console.warn("Model " + model + " nie zwrocil wynikow, probuje nastepny...");
       continue;
     }
 
-    console.log(`✅ Działa model: ${model}`);
+    console.log("Dziala model: " + model);
     return data.candidates[0].content.parts[0].text;
   }
 
-  throw new Error("Żaden model nie jest dostępny. Sprawdź klucz API lub limity.");
+  throw new Error("Zaden model nie jest dostepny. Sprawdz klucz API lub limity.");
 }
 
 async function run() {
   try {
-    console.log("Pobieram stronę biletów...");
+    console.log("Pobieram strone biletow...");
     const response = await fetch(URL);
     const html = await response.text();
     const $ = cheerio.load(html);
 
-    $('script, style, noscript, iframe, img, svg').remove();​​​​​​​​​​​​​​​​
+    $("script, style, noscript, iframe, img, svg").remove();
+    const bodyText = $("body").text().replace(/\s+/g, " ").trim();
+
+    console.log("Analizuje tekst za pomoca AI...");
+
+    const prompt =
+      "Jestes ekspertem biletowym. Znajdz mecze Wisly Krakow.\n" +
+      "Dla kazdego meczu wyciagnij:\n" +
+      "1. Pelna nazwe (WISLA KRAKOW - PRZECIWNIK).\n" +
+      "2. Date​​​​​​​​​​​​​​​​
