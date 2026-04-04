@@ -1,11 +1,10 @@
 import * as cheerio from "cheerio";
 import fs from "fs";
 
-// Klucz i URL
-const API_KEY = process.env.GEMINI_API_KEY || "AIzaSyCSOMwvSg4SwuTeStt8dAPnryDbiTDRSEk";
-const TICKET_URL = "[https://bilety.wislakrakow.com/](https://bilety.wislakrakow.com/)";
+// Upewnij się, że tu są PROSTE cudzysłowy
+const API_KEY = process.env.GEMINI_API_KEY;
+const TICKET_URL = "https://bilety.wislakrakow.com/";
 
-// Modele do sprawdzenia
 const MODELS = [
   "gemini-1.5-flash",
   "gemini-1.5-flash-latest",
@@ -13,7 +12,7 @@ const MODELS = [
 ];
 
 async function callGemini(model, prompt) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${API_KEY}`;
+  const url = "https://generativelanguage.googleapis.com/v1beta/models/" + model + ":generateContent?key=" + API_KEY;
   
   const res = await fetch(url, {
     method: "POST",
@@ -27,33 +26,22 @@ async function callGemini(model, prompt) {
 
 async function callWithFallback(prompt) {
   for (const model of MODELS) {
-    console.log("Próbuję model: " + model);
+    console.log("Próbuje model: " + model);
     try {
       const data = await callGemini(model, prompt);
-
       if (data.error) {
-        console.warn(`Model ${model} zwrócił błąd: ${data.error.message}`);
+        console.warn("Model " + model + " błąd: " + data.error.message);
         continue;
       }
-
-      if (!data.candidates || data.candidates.length === 0) {
-        console.warn(`Model ${model} nie zwrócił treści.`);
-        continue;
-      }
+      if (!data.candidates || data.candidates.length === 0) continue;
 
       let text = data.candidates[0].content.parts[0].text;
-      
-      // Czyszczenie tekstu z ewentualnych ramek markdown ```json ... ```
-      text = text.replace(/```json/g, "").replace(/```/g, "").trim();
-      
-      console.log("Sukces! Zadziałał model: " + model);
-      return text;
+      return text.replace(/```json/g, "").replace(/```/g, "").trim();
     } catch (e) {
-      console.warn(`Błąd połączenia z modelem ${model}: ${e.message}`);
       continue;
     }
   }
-  throw new Error("Żaden model nie odpowiedział poprawnie.");
+  throw new Error("Żaden model nie odpowiedział.");
 }
 
 async function run() {
@@ -63,21 +51,19 @@ async function run() {
     const html = await response.text();
     const $ = cheerio.load(html);
 
-    // Usuwanie zbędnych elementów ze strony
     $("script, style, noscript, iframe, img, svg").remove();
     const bodyText = $("body").text().replace(/\s+/g, " ").trim();
 
     console.log("Analizuję tekst za pomocą AI...");
 
-    const prompt = `Jesteś ekspertem biletowym. Znajdź mecze Wisły Kraków.
+    const prompt = `Jesteś ekspertem biletowym Wisły Kraków. 
+Znajdź mecze: Górnik Łęczna, Wrexham, Puszcza.
 Dla każdego meczu wyciągnij:
-1. Pełną nazwę (WISŁA KRAKÓW - PRZECIWNIK).
+1. Pełną nazwę (np. WISŁA KRAKÓW - WREXHAM AFC).
 2. Datę w formacie YYYY-MM-DDTHH:MM:00.
-3. LICZBĘ SPRZEDANYCH BILETÓW (to te liczby w okienkach przy banerach).
+3. LICZBĘ SPRZEDANYCH BILETÓW (to liczba w okienku przy banerze).
 
-KRYTYCZNE: Nie pomyl biletów z rokiem 1906 ani 2026.
-Zwróć wynik WYŁĄCZNIE jako czysty JSON w formacie:
-{"events":[{"id":"ID","title":"WISŁA KRAKÓW - ...","date":"2026-04-15T19:00:00","tickets":1000}]}
+Zwróć TYLKO czysty JSON: {"events":[{"id":"ID","title":"NAZWA","date":"DATA","tickets":1234}]}
 
 Tekst strony:
 ${bodyText.substring(0, 25000)}`;
@@ -91,10 +77,10 @@ ${bodyText.substring(0, 25000)}`;
     };
 
     fs.writeFileSync("events.json", JSON.stringify(output, null, 2));
-    console.log("SUKCES! Plik events.json został zaktualizowany.");
+    console.log("SUKCES! Dane zapisane.");
 
   } catch (error) {
-    console.error("BŁĄD KRYTYCZNY: " + error.message);
+    console.error("BŁĄD: " + error.message);
     const fallback = { updated: "Błąd: " + error.message, events: [] };
     fs.writeFileSync("events.json", JSON.stringify(fallback, null, 2));
   }
