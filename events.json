@@ -1,4 +1,23 @@
 {
-  "updated": "Błąd: Błąd API (Klucz): Your API key was reported as leaked. Please use another API key.",
-  "events": []
+  "updated": "4.04.2026, 15:59:08",
+  "events": [
+    {
+      "id": "MECZ1",
+      "title": "WISŁA KRAKÓW - GÓRNIK ŁĘCZNA",
+      "date": null,
+      "tickets": null
+    },
+    {
+      "id": "MECZ2",
+      "title": "WISŁA KRAKÓW - WREXHAM AFC",
+      "date": null,
+      "tickets": null
+    },
+    {
+      "id": "MECZ3",
+      "title": "WISŁA KRAKÓW - PUSZCZA NIEPOŁOMICE",
+      "date": null,
+      "tickets": null
+    }
+  ]
 }
