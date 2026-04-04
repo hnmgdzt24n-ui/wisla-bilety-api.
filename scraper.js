@@ -18,22 +18,25 @@ async function run() {
     console.log("Analizuję tekst za pomocą AI...");
     
     const prompt = `Jesteś ekspertem analizującym stronę biletową. 
-Znajdź mecze Wisły Kraków widoczne w tekście (m.in. Górnik Łęczna, Wrexham, Puszcza).
+Znajdź mecze pierwszej drużyny Wisły Kraków (np. Górnik Łęczna, Wrexham, Puszcza itp.).
 Dla KAŻDEGO znalezionego meczu wyciągnij:
-1. Nazwę przeciwnika
-2. Datę i godzinę meczu (jeśli jest podana wprost, zapisz w formacie YYYY-MM-DDTHH:MM:00)
-3. Dokładną liczbę WOLNYCH MIEJSC (dostępnych biletów).
+1. Pełną nazwę meczu (np. WISŁA KRAKÓW - GÓRNIK ŁĘCZNA).
+2. Datę i godzinę meczu w formacie YYYY-MM-DDTHH:MM:00 (np. 2026-04-15T19:00:00).
+3. LICZBĘ DOSTĘPNYCH BILETÓW.
 
-UWAGA KRYTYCZNA: Nie myl liczby biletów z godziną (np. 19:06), ceną w PLN ani rokiem! Jeśli w tekście przy danym meczu nie jest napisane wprost "dostępne bilety / wolne miejsca: X", absolutnie nic nie zmyślaj i jako liczbę biletów wpisz 0.
+UWAGA DOTYCZĄCA BILETÓW:
+Na stronie liczba dostępnych biletów pojawia się jako samotna liczba (np. 15302, 850, 4120) umieszczona w okienku przy banerze meczu.
+Znajdź tę liczbę w tekście w okolicach danego meczu. 
+KRYTYCZNE: Nie pomyl liczby biletów z rokiem założenia klubu (np. 1906, 1946), obecnym rokiem (2026), godzinami (np. 19:06, 17:30) ani cenami.
 
 Zwróć wynik JAKO CZYSTY JSON:
 {
   "events": [
     {
-      "id": "WISLAWREXHAM", 
-      "title": "WISŁA KRAKÓW - WREXHAM AFC",
-      "date": "2026-07-11T15:00:00", 
-      "tickets": 0 
+      "id": "WISLAGORNIK", 
+      "title": "WISŁA KRAKÓW - GÓRNIK ŁĘCZNA",
+      "date": "2026-04-15T19:00:00", 
+      "tickets": 15300 
     }
   ]
 }
