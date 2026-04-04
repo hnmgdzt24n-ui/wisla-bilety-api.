@@ -14,7 +14,7 @@ async function run() {
     $('script, style, noscript, iframe, img, svg').remove();
     let bodyText = $('body').text().replace(/\s+/g, ' ').trim();
 
-    console.log("Analizuję tekst za pomocą AI...");
+    console.log("Analizuję tekst za pomocą AI (używam gemini-pro)...");
     
     const prompt = `Jesteś ekspertem analizującym stronę biletową. 
 Znajdź mecze pierwszej drużyny Wisły Kraków (np. Górnik Łęczna, Wrexham, Puszcza itp.).
@@ -28,7 +28,7 @@ Na stronie liczba dostępnych biletów pojawia się jako samotna liczba (np. 153
 Znajdź tę liczbę w tekście w okolicach danego meczu. 
 KRYTYCZNE: Nie pomyl liczby biletów z rokiem założenia klubu (np. 1906, 1946), obecnym rokiem (2026), godzinami (np. 19:06, 17:30) ani cenami. Jeśli liczby ewidentnie nie ma, wpisz 0.
 
-Zwróć wynik JAKO CZYSTY JSON:
+Zwróć wynik JAKO CZYSTY JSON (bez żadnych dodatkowych słów):
 {
   "events": [
     {
@@ -43,13 +43,12 @@ Zwróć wynik JAKO CZYSTY JSON:
 Tekst strony:
 ${bodyText.substring(0, 30000)}`;
 
-    // ZMIANA: używamy 'gemini-1.5-flash-latest' zamiast 'gemini-1.5-flash'
-    const aiReq = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`, {
+    // ZMIANA: Wracamy do modelu gemini-pro, który na 100% działa na Twoim koncie!
+    const aiReq = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: { response_mime_type: "application/json" }
+            contents: [{ parts: [{ text: prompt }] }]
         })
     });
 
@@ -61,6 +60,10 @@ ${bodyText.substring(0, 30000)}`;
     }
 
     let rawJson = responseAI.candidates[0].content.parts[0].text;
+    
+    // CZYSZCZENIE: usuwamy znaczniki markdown (```json ... ```), które gemini-pro lubi dodawać
+    rawJson = rawJson.replace(/```json/g, '').replace(/```/g, '').trim();
+    
     let parsedData = JSON.parse(rawJson);
 
     const output = { 
