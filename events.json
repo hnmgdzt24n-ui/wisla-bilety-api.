@@ -1,4 +1,4 @@
 {
-  "updated": "Błąd: Invalid JSON payload received. Unknown name \"response_mime_type\" at 'generation_config': Cannot find field.",
+  "updated": "Błąd: Invalid JSON payload received. Unknown name \"responseMimeType\" at 'generation_config': Cannot find field.",
   "events": []
 }
