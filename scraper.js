@@ -43,7 +43,8 @@ Zwróć wynik JAKO CZYSTY JSON:
 Tekst strony:
 ${bodyText.substring(0, 30000)}`;
 
-    const aiReq = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
+    // ZMIANA: używamy 'gemini-1.5-flash-latest' zamiast 'gemini-1.5-flash'
+    const aiReq = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -54,7 +55,6 @@ ${bodyText.substring(0, 30000)}`;
 
     const responseAI = await aiReq.json();
     
-    // Zabezpieczenie przed brakiem odpowiedzi od AI
     if (!responseAI.candidates) {
         console.error("🔴 Błąd od Google Gemini API:", JSON.stringify(responseAI, null, 2));
         throw new Error("AI nie zwróciło poprawnej odpowiedzi.");
@@ -74,7 +74,6 @@ ${bodyText.substring(0, 30000)}`;
   } catch (error) {
     console.error("BŁĄD KRYTYCZNY:", error.message);
     
-    // Zapisujemy pusty plik awaryjny, żeby widget w telefonie miał co odczytać
     const safeOutput = { 
       updated: new Date().toLocaleString('pl-PL', { timeZone: 'Europe/Warsaw' }) + " (Czkawka AI)", 
       events: []
