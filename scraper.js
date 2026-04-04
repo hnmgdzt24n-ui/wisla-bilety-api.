@@ -11,11 +11,10 @@ async function run() {
     const html = await response.text();
     const $ = cheerio.load(html);
 
-    // Usuwamy zbędne elementy
     $('script, style, noscript, iframe, img, svg').remove();
     let bodyText = $('body').text().replace(/\s+/g, ' ').trim();
 
-    console.log("Analizuję tekst za pomocą AI (v1 + responseMimeType)...");
+    console.log("Analizuję tekst za pomocą AI...");
     
     const prompt = `Jesteś ekspertem biletowym. Znajdź mecze Wisły Kraków (np. Łęczna, Wrexham, Puszcza).
 Dla każdego meczu wyciągnij:
@@ -39,27 +38,26 @@ Zwróć wynik JAKO CZYSTY JSON:
 Tekst strony:
 ${bodyText.substring(0, 30000)}`;
 
-    // ZMIANA: Poprawione na responseMimeType (wielka litera, bez podłogi)
-    const aiReq = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: { 
-                responseMimeType: "application/json" 
-            }
-        })
+    const aiReq = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: { 
+          responseMimeType: "application/json" 
+        }
+      })
     });
 
     const responseAI = await aiReq.json();
     
     if (responseAI.error) {
-        console.error("🔴 Błąd API:", JSON.stringify(responseAI.error, null, 2));
-        throw new Error(responseAI.error.message);
+      console.error("🔴 Błąd API:", JSON.stringify(responseAI.error, null, 2));
+      throw new Error(responseAI.error.message);
     }
 
     if (!responseAI.candidates || responseAI.candidates.length === 0) {
-        throw new Error("AI nie zwróciło wyników.");
+      throw new Error("AI nie zwróciło wyników.");
     }
 
     let rawJson = responseAI.candidates[0].content.parts[0].text;
@@ -71,10 +69,10 @@ ${bodyText.substring(0, 30000)}`;
     };
     
     fs.writeFileSync('events.json', JSON.stringify(output, null, 2));
-    console.log("SUKCES! Znaleziono mecze i zapisano plik.");
+    console.log("✅ SUKCES! Znaleziono mecze i zapisano plik.");
 
   } catch (error) {
-    console.error("BŁĄD:", error.message);
+    console.error("❌ BŁĄD:", error.message);
     const fallback = { updated: "Błąd: " + error.message, events: [] };
     fs.writeFileSync('events.json', JSON.stringify(fallback, null, 2));
   }
