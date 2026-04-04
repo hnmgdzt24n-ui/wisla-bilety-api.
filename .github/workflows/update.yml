@@ -1,7 +1,6 @@
-Name: Aktualizacja Biletow
+name: Aktualizacja Biletow
 on:
   schedule:
-    # Zmieniono z */30 na */15 (uruchomienie co 15 minut)
     - cron: '*/15 * * * *'
   workflow_dispatch:
 
