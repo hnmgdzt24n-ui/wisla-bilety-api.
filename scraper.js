@@ -6,44 +6,62 @@ const TICKET_URL = "https://bilety.wislakrakow.com/";
 
 async function run() {
   try {
-    if (!API_KEY) throw new Error("Brak klucza API!");
+    if (!API_KEY) throw new Error("Brak klucza API w Secrets!");
 
     console.log("Pobieram stronę biletów...");
     const response = await fetch(TICKET_URL);
     const html = await response.text();
     const $ = cheerio.load(html);
 
-    // LEPSZE WYCIĄGANIE TEKSTU: Dodajemy spacje między elementami, żeby liczby się nie sklejały
+    // USUWANIE ŚMIECI I PRECYZYJNE WYCIĄGANIE TEKSTU
     $('script, style, noscript, iframe, img, svg').remove();
+    
+    // Zbieramy tekst z przerwami, żeby liczby biletów się nie zlewały
     let bodyText = "";
-    $('body *').each(function() {
-      const text = $(this).contents().filter(function() {
-        return this.nodeType === 3; // Tylko czysty tekst
+    $('div, span, p, b, strong, h1, h2, h3').each(function() {
+      const txt = $(this).contents().filter(function() {
+        return this.nodeType === 3; 
       }).text().trim();
-      if (text) bodyText += text + " ";
+      if (txt) bodyText += txt + " | ";
     });
     bodyText = bodyText.replace(/\s+/g, " ").trim();
 
-    console.log("KROK 1: Wykrywanie modelu...");
+    console.log("KROK 1: Wykrywanie dostępnego modelu...");
     const modelsUrl = `https://generativelanguage.googleapis.com/v1beta/models?key=${API_KEY}`;
     const modelsRes = await fetch(modelsUrl);
     const modelsData = await modelsRes.json();
-    const bestModel = modelsData.models.find(m => m.name.includes("flash") && m.supportedGenerationMethods.includes("generateContent"));
+    
+    // Wybieramy pierwszy działający model Flash
+    const bestModel = modelsData.models.find(m => 
+      m.name.includes("flash") && m.supportedGenerationMethods.includes("generateContent")
+    );
     const modelPath = bestModel ? bestModel.name : "models/gemini-1.5-flash";
+    console.log("Używam modelu: " + modelPath);
 
-    console.log("Wybrano: " + modelPath + ". KROK 2: Analiza szczegółowa...");
+    console.log("KROK 2: Analiza danych (Tryb Detektywa)...");
 
-    const prompt = `Jesteś ekspertem danych. W poniższym tekście ze strony Wisły Kraków znajdź mecze: GÓRNIK ŁĘCZNA, WREXHAM, PUSZCZA.
-Dla każdego meczu musisz znaleźć liczbę SPRZEDANYCH BILETÓW. 
+    const prompt = `Jesteś analitykiem biletowym. W tekście strony Wisły Kraków znajdź mecze pierwszej drużyny (np. Łęczna, Wrexham, Puszcza).
+Dla każdego meczu wyciągnij:
+1. Pełną nazwę (WISŁA KRAKÓW - PRZECIWNIK).
+2. Datę (YYYY-MM-DDTHH:MM:00).
+3. LICZBĘ SPRZEDANYCH BILETÓW. 
 
-WSKAZÓWKA: Szukaj dużej liczby (zazwyczaj od 500 do 33000), która znajduje się blisko nazwy przeciwnika. 
-KRYTYCZNE: 
-- Nie ignoruj liczb! Jeśli widzisz liczbę typu 11425, 28410 lub 8450, to SĄ sprzedane bilety.
-- Nie myl z rokiem 1906, 2026 ani godziną (np. 19:06).
-- Jeśli widzisz liczbę w formacie "12 345" (ze spacją), połącz ją w 12345.
+UWAGA: Szukaj liczb typu 19257, 11000, 8450. Są to liczby biletów widoczne w okienkach na banerach. 
+- Nie ignoruj ich! 
+- Jeśli liczba występuje obok nazwy meczu lub słowa "Subskrypcja", to jest to liczba sprzedanych biletów.
+- Nie myl z rokiem 1906, 2026 ani godziną.
 
 Zwróć wynik JAKO CZYSTY JSON:
-{"events":[{"id":"MECZ","title":"WISŁA KRAKÓW - PRZECIWNIK","date":"2026-XX-XXTXX:XX:00","tickets":12345}]}
+{
+  "events": [
+    {
+      "id": "MECZ",
+      "title": "WISŁA KRAKÓW - ...",
+      "date": "2026-04-06T11:30:00",
+      "tickets": 19257
+    }
+  ]
+}
 
 Tekst strony:
 ${bodyText.substring(0, 20000)}`;
@@ -56,21 +74,31 @@ ${bodyText.substring(0, 20000)}`;
     });
 
     const data = await aiReq.json();
+    if (data.error) throw new Error(data.error.message);
+
     let rawJson = data.candidates[0].content.parts[0].text;
     rawJson = rawJson.replace(/```json/g, "").replace(/```/g, "").trim();
     
     const parsedData = JSON.parse(rawJson);
+    
+    // Filtrujemy, żeby nie zapisywać "null" lub "0" jeśli AI znowu spanikuje
+    const events = (parsedData.events || []).map(e => ({
+      ...e,
+      tickets: e.tickets || 0
+    }));
+
     const output = {
       updated: new Date().toLocaleString("pl-PL", { timeZone: "Europe/Warsaw" }),
-      events: parsedData.events || [],
+      events: events
     };
 
     fs.writeFileSync("events.json", JSON.stringify(output, null, 2));
-    console.log("SUKCES! Wyciągnięte dane: " + JSON.stringify(output.events));
+    console.log("SUKCES! Znaleziono meczów: " + events.length);
+    console.log("Dane: " + JSON.stringify(events));
 
   } catch (error) {
-    console.error("BŁĄD: " + error.message);
-    fs.writeFileSync("events.json", JSON.stringify({ updated: "Błąd AI", events: [] }, null, 2));
+    console.error("BŁĄD KRYTYCZNY: " + error.message);
+    fs.writeFileSync("events.json", JSON.stringify({ updated: "Błąd: " + error.message, events: [] }, null, 2));
   }
 }
 
