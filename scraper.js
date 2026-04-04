@@ -1,30 +1,25 @@
 import * as cheerio from "cheerio";
 import fs from "fs";
 
-// Używamy Twojego klucza bezpośrednio (lub z env na GitHubie)
+// Klucz i URL
 const API_KEY = process.env.GEMINI_API_KEY || "AIzaSyCSOMwvSg4SwuTeStt8dAPnryDbiTDRSEk";
-const TICKET_URL = "https://bilety.wislakrakow.com/";
+const TICKET_URL = "[https://bilety.wislakrakow.com/](https://bilety.wislakrakow.com/)";
 
-// Kolejność: najpierw te, które u Ciebie działały, potem nowsze/mocniejsze
+// Modele do sprawdzenia
 const MODELS = [
   "gemini-1.5-flash",
   "gemini-1.5-flash-latest",
-  "gemini-1.5-pro",
-  "gemini-2.0-flash-exp"
+  "gemini-pro"
 ];
 
 async function callGemini(model, prompt) {
-  // Używamy endpointu v1 dla większej stabilności
-  const url = `https://generativelanguage.googleapis.com/v1/models/${model}:generateContent?key=${API_KEY}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${API_KEY}`;
   
   const res = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: { 
-        responseMimeType: "application/json" 
-      },
+      contents: [{ parts: [{ text: prompt }] }]
     }),
   });
   return await res.json();
@@ -46,8 +41,13 @@ async function callWithFallback(prompt) {
         continue;
       }
 
+      let text = data.candidates[0].content.parts[0].text;
+      
+      // Czyszczenie tekstu z ewentualnych ramek markdown ```json ... ```
+      text = text.replace(/```json/g, "").replace(/```/g, "").trim();
+      
       console.log("Sukces! Zadziałał model: " + model);
-      return data.candidates[0].content.parts[0].text;
+      return text;
     } catch (e) {
       console.warn(`Błąd połączenia z modelem ${model}: ${e.message}`);
       continue;
@@ -63,7 +63,7 @@ async function run() {
     const html = await response.text();
     const $ = cheerio.load(html);
 
-    // Czyszczenie kodu strony
+    // Usuwanie zbędnych elementów ze strony
     $("script, style, noscript, iframe, img, svg").remove();
     const bodyText = $("body").text().replace(/\s+/g, " ").trim();
 
@@ -75,8 +75,9 @@ Dla każdego meczu wyciągnij:
 2. Datę w formacie YYYY-MM-DDTHH:MM:00.
 3. LICZBĘ SPRZEDANYCH BILETÓW (to te liczby w okienkach przy banerach).
 
-KRYTYCZNE: Nie pomyl biletów z rokiem 1906 ani 2026. Jeśli nie jesteś pewien liczby, wpisz 0.
-Zwróć CZYSTY JSON: {"events":[{"id":"ID","title":"WISŁA KRAKÓW - ...","date":"2026-04-15T19:00:00","tickets":1000}]}
+KRYTYCZNE: Nie pomyl biletów z rokiem 1906 ani 2026.
+Zwróć wynik WYŁĄCZNIE jako czysty JSON w formacie:
+{"events":[{"id":"ID","title":"WISŁA KRAKÓW - ...","date":"2026-04-15T19:00:00","tickets":1000}]}
 
 Tekst strony:
 ${bodyText.substring(0, 25000)}`;
@@ -90,7 +91,7 @@ ${bodyText.substring(0, 25000)}`;
     };
 
     fs.writeFileSync("events.json", JSON.stringify(output, null, 2));
-    console.log("KONIEC! Plik events.json został zaktualizowany.");
+    console.log("SUKCES! Plik events.json został zaktualizowany.");
 
   } catch (error) {
     console.error("BŁĄD KRYTYCZNY: " + error.message);
