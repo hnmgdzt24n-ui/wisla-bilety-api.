@@ -1,5 +1,5 @@
-import * as cheerio from ‘cheerio’;
-import fs from ‘fs’;
+const cheerio = require(“cheerio”);
+const fs = require(“fs”);
 
 const API_KEY = process.env.GEMINI_API_KEY;
 const TICKET_URL = “https://bilety.wislakrakow.com/”;
@@ -68,16 +68,17 @@ const bodyText = $("body").text().replace(/\s+/g, " ").trim();
 
 console.log("Analizuje tekst za pomoca AI...");
 
-const line1 = "Jestes ekspertem biletowym. Znajdz mecze Wisly Krakow.";
-const line2 = "Dla kazdego meczu wyciagnij:";
-const line3 = "1. Pelna nazwe (WISLA KRAKOW - PRZECIWNIK).";
-const line4 = "2. Date w formacie YYYY-MM-DDTHH:MM:00.";
-const line5 = "3. LICZBE SPRZEDANYCH BILETOW (liczba z okienka na banerze).";
-const line6 = "KRYTYCZNE: Nie pomyl biletow z rokiem 1906, 2026 ani godzina.";
-const line7 = 'Zwroc wynik JAKO CZYSTY JSON: {"events":[{"id":"MECZ_ID","title":"WISLA KRAKOW - ...","date":"2026-04-15T19:00:00","tickets":1000}]}';
-const line8 = "Tekst strony:";
-
-const prompt = [line1, line2, line3, line4, line5, line6, line7, line8, bodyText.substring(0, 30000)].join("\n");
+const prompt = [
+  "Jestes ekspertem biletowym. Znajdz mecze Wisly Krakow.",
+  "Dla kazdego meczu wyciagnij:",
+  "1. Pelna nazwe (WISLA KRAKOW - PRZECIWNIK).",
+  "2. Date w formacie YYYY-MM-DDTHH:MM:00.",
+  "3. LICZBE SPRZEDANYCH BILETOW (liczba z okienka na banerze).",
+  "KRYTYCZNE: Nie pomyl biletow z rokiem 1906, 2026 ani godzina.",
+  'Zwroc CZYSTY JSON: {"events":[{"id":"ID","title":"WISLA KRAKOW - ...","date":"2026-04-15T19:00:00","tickets":1000}]}',
+  "Tekst strony:",
+  bodyText.substring(0, 30000),
+].join("\n");
 
 const rawJson = await callWithFallback(prompt);
 const parsedData = JSON.parse(rawJson);
