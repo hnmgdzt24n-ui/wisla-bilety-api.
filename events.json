@@ -1,23 +1,23 @@
 {
-  "updated": "5.04.2026, 21:25:06",
+  "updated": "5.04.2026, 22:03:30",
   "events": [
     {
-      "id": "wisla_gornik_leczna",
+      "id": "GORNIK_LECZNA",
       "title": "WISŁA KRAKÓW - GÓRNIK ŁĘCZNA",
       "date": "2026-04-06T11:30:00",
-      "tickets": 22180
+      "tickets": 22317
     },
     {
-      "id": "wisla_wrexham_afc",
+      "id": "WREXHAM_AFC",
       "title": "WISŁA KRAKÓW - WREXHAM AFC",
       "date": "2026-07-11T15:00:00",
-      "tickets": 11326
+      "tickets": 11330
     },
     {
-      "id": "wisla_puszcza_niepolomice",
+      "id": "PUSZCZA_NIEPOLOMICE",
       "title": "WISŁA KRAKÓW - PUSZCZA NIEPOŁOMICE",
       "date": "2026-04-24T20:30:00",
-      "tickets": 9484
+      "tickets": 9498
     }
   ]
 }
