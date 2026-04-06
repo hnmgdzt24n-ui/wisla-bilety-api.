@@ -1,11 +1,11 @@
 {
-  "updated": "6.04.2026, 12:01:20",
+  "updated": "6.04.2026, 12:10:44",
   "events": [
     {
       "id": "match_1",
       "title": "WISŁA KRAKÓW - GÓRNIK ŁĘCZNA",
       "date": "2026-04-06T11:30:00",
-      "tickets": 23630
+      "tickets": 23631
     },
     {
       "id": "match_2",
@@ -17,7 +17,7 @@
       "id": "match_3",
       "title": "WISŁA KRAKÓW - PUSZCZA NIEPOŁOMICE",
       "date": "2026-04-24T20:30:00",
-      "tickets": 9607
+      "tickets": 9609
     }
   ]
 }
