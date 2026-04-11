@@ -1,17 +1,17 @@
 {
-  "updated": "11.04.2026, 01:55:16",
+  "updated": "11.04.2026, 07:20:37",
   "events": [
     {
-      "id": "WREXHAM",
+      "id": "WISLA_WREXHAM",
       "title": "WISŁA KRAKÓW - WREXHAM AFC",
       "date": "2026-07-11T15:00:00",
       "tickets": 11693
     },
     {
-      "id": "PUSZCZA",
-      "title": "WISŁA KRAKÓW - PUSZCZA Niepołomice",
+      "id": "WISLA_PUSZCZA",
+      "title": "WISŁA KRAKÓW - PUSZCZA",
       "date": "2026-04-24T20:30:00",
-      "tickets": 12603
+      "tickets": 12608
     }
   ]
 }
