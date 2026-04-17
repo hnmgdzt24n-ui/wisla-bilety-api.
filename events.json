@@ -1,4 +1,23 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "17.04.2026, 08:26:03",
+  "events": [
+    {
+      "id": "MECZ_1",
+      "title": "WISŁA KRAKÓW - PUSZCZA",
+      "date": "2026-04-24T20:30:00",
+      "tickets": 15894
+    },
+    {
+      "id": "MECZ_2",
+      "title": "WISŁA KRAKÓW - WREXHAM AFC",
+      "date": "2026-07-11T15:00:00",
+      "tickets": 11943
+    },
+    {
+      "id": "MECZ_3",
+      "title": "WISŁA KRAKÓW - CHROBRY GŁOGÓW",
+      "date": "2026-05-08T21:00:00",
+      "tickets": 7893
+    }
+  ]
 }
