@@ -1,17 +1,17 @@
 {
-  "updated": "18.04.2026, 21:57:39",
+  "updated": "18.04.2026, 23:53:15",
   "events": [
     {
-      "id": "match_1",
-      "title": "WISŁA KRAKÓW - PUSZCZA NIEPOŁOMICE",
+      "id": "WISLA_PUSZCZA_20260424",
+      "title": "WISŁA KRAKÓW - PUSZCZA Niepołomice",
       "date": "2026-04-24T20:30:00",
-      "tickets": 17107
+      "tickets": 17228
     },
     {
-      "id": "match_2",
-      "title": "WISŁA KRAKÓW - CHROBRY GŁOGÓW",
+      "id": "WISLA_CHROBRY_20260508",
+      "title": "WISŁA KRAKÓW - CHROBRY Głogów",
       "date": "2026-05-08T21:00:00",
-      "tickets": 8603
+      "tickets": 8625
     }
   ]
 }
