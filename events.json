@@ -1,17 +1,17 @@
 {
-  "updated": "19.04.2026, 13:22:54",
+  "updated": "19.04.2026, 16:07:23",
   "events": [
     {
-      "id": "WISLA_VS_PUSZCZA",
+      "id": "WISLA_KRAKOW_PUSZCZA_20260424",
       "title": "WISŁA KRAKÓW - PUSZCZA",
       "date": "2026-04-24T20:30:00",
-      "tickets": 17472
+      "tickets": 17577
     },
     {
-      "id": "WISLA_VS_CHROBRY",
+      "id": "WISLA_KRAKOW_CHROBRY_20260508",
       "title": "WISŁA KRAKÓW - CHROBRY",
       "date": "2026-05-08T21:00:00",
-      "tickets": 8716
+      "tickets": 8766
     }
   ]
 }
