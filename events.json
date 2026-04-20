@@ -1,17 +1,17 @@
 {
-  "updated": "20.04.2026, 09:29:37",
+  "updated": "20.04.2026, 13:57:33",
   "events": [
     {
-      "id": "WISLA_KRAKOW_PUSZCZA",
+      "id": "wisla-krakow-puszcza",
       "title": "WISŁA KRAKÓW - PUSZCZA",
       "date": "2026-04-24T20:30:00",
-      "tickets": 18281
+      "tickets": 18669
     },
     {
-      "id": "WISLA_KRAKOW_CHROBRY",
+      "id": "wisla-krakow-chrobry",
       "title": "WISŁA KRAKÓW - CHROBRY",
-      "date": "2026-05-03T21:00:00",
-      "tickets": 9059
+      "date": "2026-05-08T21:00:00",
+      "tickets": 9171
     }
   ]
 }
