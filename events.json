@@ -1,17 +1,4 @@
 {
-  "updated": "20.04.2026, 13:57:33",
-  "events": [
-    {
-      "id": "wisla-krakow-puszcza",
-      "title": "WISŁA KRAKÓW - PUSZCZA",
-      "date": "2026-04-24T20:30:00",
-      "tickets": 18669
-    },
-    {
-      "id": "wisla-krakow-chrobry",
-      "title": "WISŁA KRAKÓW - CHROBRY",
-      "date": "2026-05-08T21:00:00",
-      "tickets": 9171
-    }
-  ]
+  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "events": []
 }
