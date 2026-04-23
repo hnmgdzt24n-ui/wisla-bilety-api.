@@ -1,4 +1,17 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "23.04.2026, 18:55:09",
+  "events": [
+    {
+      "id": "match_1",
+      "title": "WISŁA KRAKÓW - PUSZCZA",
+      "date": "2026-04-24T20:30:00",
+      "tickets": 26694
+    },
+    {
+      "id": "match_2",
+      "title": "WISŁA KRAKÓW - CHROBRY",
+      "date": "2026-05-08T21:00:00",
+      "tickets": 10501
+    }
+  ]
 }
