@@ -1,17 +1,4 @@
 {
-  "updated": "23.04.2026, 08:18:55",
-  "events": [
-    {
-      "id": "MECZ_1",
-      "title": "WISŁA KRAKÓW - PUSZCZA",
-      "date": "2026-04-24T20:30:00",
-      "tickets": 25093
-    },
-    {
-      "id": "MECZ_2",
-      "title": "WISŁA KRAKÓW - CHROBRY",
-      "date": "2026-05-08T21:00:00",
-      "tickets": 10341
-    }
-  ]
+  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "events": []
 }
