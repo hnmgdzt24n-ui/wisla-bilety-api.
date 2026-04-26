@@ -1,17 +1,17 @@
 {
-  "updated": "26.04.2026, 12:11:05",
+  "updated": "26.04.2026, 14:06:47",
   "events": [
     {
-      "id": "event_1",
+      "id": "WISLA_CHROBRY",
       "title": "WISŁA KRAKÓW - CHROBRY GŁOGÓW",
       "date": "2026-05-08T21:00:00",
-      "tickets": 12111
+      "tickets": 12326
     },
     {
-      "id": "event_2",
+      "id": "WISLA_WREXHAM",
       "title": "WISŁA KRAKÓW - WREXHAM AFC",
       "date": "2026-07-11T15:00:00",
-      "tickets": 12210
+      "tickets": 12218
     }
   ]
 }
