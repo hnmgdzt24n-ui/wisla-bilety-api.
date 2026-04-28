@@ -1,17 +1,17 @@
 {
-  "updated": "28.04.2026, 18:18:46",
+  "updated": "28.04.2026, 22:50:24",
   "events": [
     {
-      "id": "CHROBRY_GLOGOW_20260508",
-      "title": "WISŁA KRAKÓW - CHROBRY GŁOGÓW",
+      "id": "WISLA_KRAKOW_CHROBRY_GLOGOW",
+      "title": "WISŁA KRAKÓW - CHROBRY Głogów",
       "date": "2026-05-08T21:00:00",
-      "tickets": 16176
+      "tickets": 17019
     },
     {
-      "id": "POGON_SIEDLCE_20260524",
-      "title": "WISŁA KRAKÓW - POGOŃ SIEDLCE",
+      "id": "WISLA_KRAKOW_POGON_SIEDLCE",
+      "title": "WISŁA KRAKÓW - POGOŃ Siedlce",
       "date": "2026-05-24T16:30:00",
-      "tickets": 11626
+      "tickets": 11997
     }
   ]
 }
