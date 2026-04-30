@@ -1,4 +1,17 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "30.04.2026, 19:05:47",
+  "events": [
+    {
+      "id": "wisla_chrobry",
+      "title": "WISŁA KRAKÓW - CHROBRY GŁOGÓW",
+      "date": "2026-05-08T21:00:00",
+      "tickets": 21045
+    },
+    {
+      "id": "wisla_pogon",
+      "title": "WISŁA KRAKÓW - POGOŃ SIEDLCE",
+      "date": "2026-05-24T16:30:00",
+      "tickets": 25704
+    }
+  ]
 }
