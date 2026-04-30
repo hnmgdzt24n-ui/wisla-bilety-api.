@@ -1,17 +1,4 @@
 {
-  "updated": "29.04.2026, 23:45:45",
-  "events": [
-    {
-      "id": "WISLA_KRAKOW_VS_CHROBRY",
-      "title": "WISŁA KRAKÓW - CHROBRY GŁOGÓW",
-      "date": "2026-05-08T21:00:00",
-      "tickets": 19133
-    },
-    {
-      "id": "WISLA_KRAKOW_VS_POGON",
-      "title": "WISŁA KRAKÓW - POGOŃ SIEDLCE",
-      "date": "2026-05-24T16:30:00",
-      "tickets": 15312
-    }
-  ]
+  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "events": []
 }
