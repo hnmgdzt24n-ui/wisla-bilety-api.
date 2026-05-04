@@ -1,23 +1,4 @@
 {
-  "updated": "4.05.2026, 15:10:55",
-  "events": [
-    {
-      "id": "MECZ_CHROBRY",
-      "title": "WISŁA KRAKÓW - CHROBRY Głogów",
-      "date": "2026-05-08T21:00:00",
-      "tickets": 27355
-    },
-    {
-      "id": "MECZ_POGON",
-      "title": "WISŁA KRAKÓW - POGOŃ Siedlce",
-      "date": "2026-05-24T16:30:00",
-      "tickets": 28645
-    },
-    {
-      "id": "MECZ_WREXHAM",
-      "title": "WISŁA KRAKÓW - WREXHAM AFC",
-      "date": "2026-07-11T15:00:00",
-      "tickets": 12474
-    }
-  ]
+  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "events": []
 }
