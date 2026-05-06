@@ -1,4 +1,23 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "6.05.2026, 14:08:35",
+  "events": [
+    {
+      "id": "Wisla-Chrobry",
+      "title": "WISŁA KRAKÓW - CHROBRY GŁOGÓW",
+      "date": "2026-05-08T21:00:00",
+      "tickets": 30331
+    },
+    {
+      "id": "Wisla-Pogon",
+      "title": "WISŁA KRAKÓW - POGOŃ SIEDLCE",
+      "date": "2026-05-24T16:30:00",
+      "tickets": 29372
+    },
+    {
+      "id": "Wisla-Wrexham",
+      "title": "WISŁA KRAKÓW - WREXHAM AFC",
+      "date": "2026-07-11T15:00:00",
+      "tickets": 12560
+    }
+  ]
 }
