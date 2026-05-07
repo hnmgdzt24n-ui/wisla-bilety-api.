@@ -1,23 +1,23 @@
 {
-  "updated": "7.05.2026, 19:11:34",
+  "updated": "7.05.2026, 21:00:39",
   "events": [
     {
-      "id": "match_1",
-      "title": "WISŁA KRAKÓW - CHROBRY Głogów",
+      "id": "event_1",
+      "title": "WISŁA KRAKÓW - CHROBRY GŁOGÓW",
       "date": "2026-05-08T21:00:00",
-      "tickets": 32029
+      "tickets": 32119
     },
     {
-      "id": "match_2",
-      "title": "WISŁA KRAKÓW - POGOŃ Siedlce",
+      "id": "event_2",
+      "title": "WISŁA KRAKÓW - POGOŃ SIEDLCE",
       "date": "2026-05-24T16:30:00",
       "tickets": 29647
     },
     {
-      "id": "match_3",
+      "id": "event_3",
       "title": "WISŁA KRAKÓW - WREXHAM AFC",
       "date": "2026-07-11T15:00:00",
-      "tickets": 12601
+      "tickets": 12605
     }
   ]
 }
