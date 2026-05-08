@@ -1,17 +1,11 @@
 {
-  "updated": "8.05.2026, 22:34:12",
+  "updated": "8.05.2026, 23:42:14",
   "events": [
     {
-      "id": "WISLA_VS_POGON_SIEDLCE",
+      "id": "WISLA_KRAKOW_POGON_SIEDLCE_20260524",
       "title": "WISŁA KRAKÓW - POGOŃ SIEDLCE",
       "date": "2026-05-24T16:30:00",
-      "tickets": 29880
-    },
-    {
-      "id": "WISLA_VS_WREXHAM_AFC",
-      "title": "WISŁA KRAKÓW - WREXHAM AFC",
-      "date": "2026-07-11T15:00:00",
-      "tickets": 12665
+      "tickets": 29883
     }
   ]
 }
