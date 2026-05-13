@@ -1,11 +1,17 @@
 {
-  "updated": "13.05.2026, 07:34:42",
+  "updated": "13.05.2026, 10:31:02",
   "events": [
     {
-      "id": "WISLA_KRAKOW-POGON_SIEDLCE_20260524",
-      "title": "WISŁA KRAKÓW - POGOŃ Siedlce",
-      "date": "2026-05-24T16:30:00",
-      "tickets": null
+      "id": "KARNETY_EKSTRAKLASA_KAMPANIA_1",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę",
+      "date": "2024-07-01T00:00:00",
+      "tickets": 3009
+    },
+    {
+      "id": "KARNETY_EKSTRAKLASA_KAMPANIA_2",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę",
+      "date": "2024-07-01T00:00:00",
+      "tickets": 1068
     }
   ]
 }
