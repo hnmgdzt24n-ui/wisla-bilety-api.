@@ -1,4 +1,17 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "15.05.2026, 22:35:51",
+  "events": [
+    {
+      "id": "SEASON_TICKETS_SALE_1",
+      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów na Ekstraklasę",
+      "date": null,
+      "tickets": 3510
+    },
+    {
+      "id": "SEASON_TICKETS_SALE_2",
+      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów na Ekstraklasę (RSVP)",
+      "date": null,
+      "tickets": 1275
+    }
+  ]
 }
