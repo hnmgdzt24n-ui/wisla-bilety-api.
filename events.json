@@ -1,17 +1,11 @@
 {
-  "updated": "15.05.2026, 22:35:51",
+  "updated": "15.05.2026, 23:42:51",
   "events": [
     {
-      "id": "SEASON_TICKETS_SALE_1",
-      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów na Ekstraklasę",
-      "date": null,
+      "id": "WISLA_POGON",
+      "title": "WISŁA KRAKÓW - POGOŃ SIEDLCE",
+      "date": "2026-05-24T16:30:00",
       "tickets": 3510
-    },
-    {
-      "id": "SEASON_TICKETS_SALE_2",
-      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów na Ekstraklasę (RSVP)",
-      "date": null,
-      "tickets": 1275
     }
   ]
 }
