@@ -1,11 +1,17 @@
 {
-  "updated": "17.05.2026, 00:51:07",
+  "updated": "17.05.2026, 01:56:59",
   "events": [
     {
-      "id": "WISLA_POGON_SIEDLCE",
-      "title": "WISŁA KRAKÓW - POGOŃ SIEDLCE",
-      "date": "2026-05-24T16:30:00",
-      "tickets": 0
+      "id": "KARNETY_EKSTRAKLASA_OFERTA_1",
+      "title": "WISŁA KRAKÓW - KARNETY NA EKSTRAKLASĘ OFERTA 1",
+      "date": "2026-07-01T00:00:00",
+      "tickets": 3631
+    },
+    {
+      "id": "KARNETY_EKSTRAKLASA_OFERTA_2",
+      "title": "WISŁA KRAKÓW - KARNETY NA EKSTRAKLASĘ OFERTA 2 (RSVP)",
+      "date": "2026-07-01T00:00:00",
+      "tickets": 1318
     }
   ]
 }
