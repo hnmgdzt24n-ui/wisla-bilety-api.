@@ -1,4 +1,11 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "21.05.2026, 13:37:43",
+  "events": [
+    {
+      "id": "WISLA_KRAKOW_POGON_SIEDLCE",
+      "title": "WISŁA KRAKÓW - POGOŃ SIEDLCE",
+      "date": "2026-05-24T16:30:00",
+      "tickets": 0
+    }
+  ]
 }
