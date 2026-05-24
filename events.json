@@ -1,4 +1,11 @@
 {
-  "updated": "24.05.2026, 01:12:58",
-  "events": []
+  "updated": "24.05.2026, 02:14:15",
+  "events": [
+    {
+      "id": "POGON_SIEDLCE",
+      "title": "WISŁA KRAKÓW - POGOŃ SIEDLCE",
+      "date": "2026-05-24T16:30:00",
+      "tickets": 0
+    }
+  ]
 }
