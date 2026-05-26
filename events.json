@@ -1,4 +1,11 @@
 {
-  "updated": "26.05.2026, 19:37:15",
-  "events": []
+  "updated": "26.05.2026, 21:45:59",
+  "events": [
+    {
+      "id": "WIECZYSTA_KRAKOW_POLONIA_WARSZAWA_2026",
+      "title": "WIECZYSTA KRAKÓW - POLONIA WARSZAWA",
+      "date": "2026-05-28T20:30:00",
+      "tickets": 3232
+    }
+  ]
 }
