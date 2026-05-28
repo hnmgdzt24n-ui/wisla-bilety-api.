@@ -1,11 +1,4 @@
 {
-  "updated": "28.05.2026, 13:51:01",
-  "events": [
-    {
-      "id": "WIECZYSTA_KRAKOW_POLONIA_WARSZAWA",
-      "title": "WIECZYSTA KRAKÓW - POLONIA WARSZAWA",
-      "date": "2026-05-28T20:30:00",
-      "tickets": 6500
-    }
-  ]
+  "updated": "Błąd Vision: Could not find Chrome (ver. 127.0.6533.88). This can occur if either\n 1. you did not perform an installation before running the script (e.g. `npx puppeteer browsers install chrome`) or\n 2. your cache path is incorrectly configured (which is: /home/runner/.cache/puppeteer).\nFor (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.",
+  "events": []
 }
