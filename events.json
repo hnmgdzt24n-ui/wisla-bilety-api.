@@ -1,11 +1,4 @@
 {
-  "updated": "30.06.2026, 20:58:59",
-  "events": [
-    {
-      "id": "WREXHAM_AFC",
-      "title": "WISŁA KRAKÓW - WREXHAM AFC",
-      "date": "2026-07-11T15:00:00",
-      "tickets": 16319
-    }
-  ]
+  "updated": "Błąd Vision: Could not find Chrome (ver. 127.0.6533.88). This can occur if either\n 1. you did not perform an installation before running the script (e.g. `npx puppeteer browsers install chrome`) or\n 2. your cache path is incorrectly configured (which is: /home/runner/.cache/puppeteer).\nFor (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.",
+  "events": []
 }
