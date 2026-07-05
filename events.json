@@ -1,11 +1,11 @@
 {
-  "updated": "5.07.2026, 10:32:07",
+  "updated": "5.07.2026, 12:52:30",
   "events": [
     {
-      "id": "WREXHAM_AFC_MATCH",
+      "id": "WREXHAM_AFC",
       "title": "WISŁA KRAKÓW - WREXHAM AFC",
       "date": "2026-07-11T15:00:00",
-      "tickets": 17392
+      "tickets": 17428
     }
   ]
 }
