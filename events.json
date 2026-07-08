@@ -1,4 +1,11 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "8.07.2026, 19:10:26",
+  "events": [
+    {
+      "id": "1",
+      "title": "WISŁA KRAKÓW - WREXHAM AFC",
+      "date": "2026-07-11T15:00:00",
+      "tickets": 18821
+    }
+  ]
 }
