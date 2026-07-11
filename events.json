@@ -1,23 +1,4 @@
 {
-  "updated": "11.07.2026, 21:52:48",
-  "events": [
-    {
-      "id": "KARNETY_EKSTRAKLASA_DRUGA_TURA_1",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę (Druga Tura)",
-      "date": "2024-01-01T00:00:00",
-      "tickets": 260
-    },
-    {
-      "id": "KARNETY_EKSTRAKLASA_DRUGA_TURA_2",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę (Druga Tura - RSVP)",
-      "date": "2024-01-01T00:00:00",
-      "tickets": 94
-    },
-    {
-      "id": "KARNETY_EKSTRAKLASA_JUZ_DOSTEPNE",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę (Już Dostępne)",
-      "date": "2024-01-01T00:00:00",
-      "tickets": 7187
-    }
-  ]
+  "updated": "11.07.2026, 22:52:19",
+  "events": []
 }
