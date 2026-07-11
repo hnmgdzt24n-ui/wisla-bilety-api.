@@ -1,23 +1,4 @@
 {
-  "updated": "12.07.2026, 00:52:47",
-  "events": [
-    {
-      "id": "SEASON_TICKET_SALE_1",
-      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów na Ekstraklasę (Kampania 1)",
-      "date": "2024-08-01T00:00:00",
-      "tickets": 260
-    },
-    {
-      "id": "SEASON_TICKET_SALE_2",
-      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów na Ekstraklasę (Kampania 2)",
-      "date": "2024-08-01T00:00:00",
-      "tickets": 94
-    },
-    {
-      "id": "SEASON_TICKET_SALE_3",
-      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów na Ekstraklasę (Kampania 3)",
-      "date": "2024-08-01T00:00:00",
-      "tickets": 7187
-    }
-  ]
+  "updated": "12.07.2026, 01:57:49",
+  "events": []
 }
