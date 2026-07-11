@@ -1,11 +1,17 @@
 {
-  "updated": "11.07.2026, 14:29:01",
+  "updated": "11.07.2026, 16:04:12",
   "events": [
     {
-      "id": "WISLA_KRAKOW_WREXHAM",
-      "title": "WISŁA KRAKÓW - WREXHAM AFC",
-      "date": "2026-07-11T15:00:00",
-      "tickets": 22797
+      "id": "EKSTRAKLASA_KARNETY_255",
+      "title": "WISŁA KRAKÓW - Sezon Ekstraklasa",
+      "date": "2026-07-01T00:00:00",
+      "tickets": 255
+    },
+    {
+      "id": "EKSTRAKLASA_KARNETY_94",
+      "title": "WISŁA KRAKÓW - Sezon Ekstraklasa",
+      "date": "2026-07-01T00:00:00",
+      "tickets": 94
     }
   ]
 }
