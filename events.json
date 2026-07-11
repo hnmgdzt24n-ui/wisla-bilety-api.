@@ -1,17 +1,23 @@
 {
-  "updated": "11.07.2026, 16:04:12",
+  "updated": "11.07.2026, 17:16:29",
   "events": [
     {
-      "id": "EKSTRAKLASA_KARNETY_255",
-      "title": "WISŁA KRAKÓW - Sezon Ekstraklasa",
-      "date": "2026-07-01T00:00:00",
+      "id": "WISLA_KARNETY_EKSTRAKLASA_TURA_2_1",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę: Druga Tura (Kampania 1)",
+      "date": "2023-07-01T10:00:00",
       "tickets": 255
     },
     {
-      "id": "EKSTRAKLASA_KARNETY_94",
-      "title": "WISŁA KRAKÓW - Sezon Ekstraklasa",
-      "date": "2026-07-01T00:00:00",
+      "id": "WISLA_KARNETY_EKSTRAKLASA_TURA_2_RSVP",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę: Druga Tura z RSVP",
+      "date": "2023-07-15T11:30:00",
       "tickets": 94
+    },
+    {
+      "id": "WISLA_KARNETY_EKSTRAKLASA_KAMPANIA_GLOWNA",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę: Kampania Główna",
+      "date": "2023-06-15T09:00:00",
+      "tickets": 7187
     }
   ]
 }
