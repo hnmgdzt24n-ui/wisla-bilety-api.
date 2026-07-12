@@ -1,23 +1,4 @@
 {
-  "updated": "12.07.2026, 16:16:02",
-  "events": [
-    {
-      "id": "KARNETY_EKSTRAKLASA_DRUGA_TURA_1",
-      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów Ekstraklasa - Druga Tura",
-      "date": "2000-01-01T00:00:00",
-      "tickets": 268
-    },
-    {
-      "id": "KARNETY_EKSTRAKLASA_DRUGA_TURA_RSVP",
-      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów Ekstraklasa - RSVP Druga Tura",
-      "date": "2000-01-01T00:00:00",
-      "tickets": 94
-    },
-    {
-      "id": "KARNETY_EKSTRAKLASA_JUZ_DOSTĘPNE",
-      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów Ekstraklasa - Już Dostępne",
-      "date": "2000-01-01T00:00:00",
-      "tickets": 7187
-    }
-  ]
+  "updated": "12.07.2026, 17:28:18",
+  "events": []
 }
