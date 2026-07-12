@@ -1,23 +1,4 @@
 {
-  "updated": "12.07.2026, 19:37:24",
-  "events": [
-    {
-      "id": "KARNETY_EKSTRAKLASA_BANNER1",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę",
-      "date": "2024-01-01T00:00:00",
-      "tickets": 269
-    },
-    {
-      "id": "KARNETY_EKSTRAKLASA_BANNER2",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę",
-      "date": "2024-01-01T00:00:00",
-      "tickets": 94
-    },
-    {
-      "id": "KARNETY_EKSTRAKLASA_BANNER3",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę",
-      "date": "2024-01-01T00:00:00",
-      "tickets": 7187
-    }
-  ]
+  "updated": "12.07.2026, 20:39:05",
+  "events": []
 }
