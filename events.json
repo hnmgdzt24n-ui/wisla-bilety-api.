@@ -1,4 +1,23 @@
 {
-  "updated": "13.07.2026, 01:57:34",
-  "events": []
+  "updated": "13.07.2026, 05:46:23",
+  "events": [
+    {
+      "id": "event_1",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę - Druga Tura",
+      "date": "2024-01-01T00:00:00",
+      "tickets": 269
+    },
+    {
+      "id": "event_2",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę - Druga Tura",
+      "date": "2024-01-01T00:00:00",
+      "tickets": 94
+    },
+    {
+      "id": "event_3",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę - Już Dostępne",
+      "date": "2024-01-01T00:00:00",
+      "tickets": 7187
+    }
+  ]
 }
