@@ -1,23 +1,4 @@
 {
-  "updated": "13.07.2026, 12:30:56",
-  "events": [
-    {
-      "id": "KARNETY_EKSTRAKLASA_DRUGA_TURA_1",
-      "title": "WISŁA KRAKÓW - KARNETY NA EKSTRAKLASĘ (DRUGA TURA)",
-      "date": "2024-07-01T12:00:00",
-      "tickets": 269
-    },
-    {
-      "id": "KARNETY_EKSTRAKLASA_DRUGA_TURA_2_RSVP",
-      "title": "WISŁA KRAKÓW - KARNETY NA EKSTRAKLASĘ (DRUGA TURA Z RSVP)",
-      "date": "2024-07-01T12:00:00",
-      "tickets": 96
-    },
-    {
-      "id": "KARNETY_EKSTRAKLASA_DOSTEPNE",
-      "title": "WISŁA KRAKÓW - KARNETY NA EKSTRAKLASĘ (JUŻ DOSTĘPNE)",
-      "date": "2024-07-01T12:00:00",
-      "tickets": 7187
-    }
-  ]
+  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "events": []
 }
