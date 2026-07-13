@@ -1,23 +1,4 @@
 {
-  "updated": "13.07.2026, 21:41:38",
-  "events": [
-    {
-      "id": "SEASON_TICKET_SALE_1",
-      "title": "",
-      "date": "",
-      "tickets": 274
-    },
-    {
-      "id": "SEASON_TICKET_SALE_2",
-      "title": "",
-      "date": "",
-      "tickets": 98
-    },
-    {
-      "id": "SEASON_TICKET_SALE_3",
-      "title": "",
-      "date": "",
-      "tickets": 7186
-    }
-  ]
+  "updated": "13.07.2026, 22:43:14",
+  "events": []
 }
