@@ -1,23 +1,4 @@
 {
-  "updated": "14.07.2026, 19:23:21",
-  "events": [
-    {
-      "id": "KARNETY_EKSTRAKLASA_DRUGA_TURA_1",
-      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów: Druga Tura (Bez Meczu 1. Kolejki)",
-      "date": "2023-07-01T00:00:00",
-      "tickets": 276
-    },
-    {
-      "id": "KARNETY_EKSTRAKLASA_DRUGA_TURA_RSVP",
-      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów: Druga Tura (RSVP Z Potwierdzeniem Obecności)",
-      "date": "2023-07-01T00:00:00",
-      "tickets": 98
-    },
-    {
-      "id": "KARNETY_EKSTRAKLASA_JUZ_DOSTEPNE",
-      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów: Już Dostępne",
-      "date": "2023-07-01T00:00:00",
-      "tickets": 7186
-    }
-  ]
+  "updated": "14.07.2026, 20:40:27",
+  "events": []
 }
