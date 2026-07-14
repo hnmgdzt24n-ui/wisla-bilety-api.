@@ -1,22 +1,22 @@
 {
-  "updated": "14.07.2026, 14:16:01",
+  "updated": "14.07.2026, 16:25:23",
   "events": [
     {
-      "id": "KARNETY_1",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę - Druga Tura (bez meczu I. kolejki)",
-      "date": "2024-07-01T00:00:00",
+      "id": "season_ticket_campaign_1",
+      "title": "WISŁA KRAKÓW - Nieokreślony Przeciwnik",
+      "date": null,
       "tickets": 275
     },
     {
-      "id": "KARNETY_2",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę - RSVP z potwierdzeniem obecności",
-      "date": "2024-07-01T00:00:00",
+      "id": "season_ticket_campaign_2",
+      "title": "WISŁA KRAKÓW - Nieokreślony Przeciwnik",
+      "date": null,
       "tickets": 98
     },
     {
-      "id": "KARNETY_3",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę - Już dostępne",
-      "date": "2024-07-01T00:00:00",
+      "id": "season_ticket_campaign_3",
+      "title": "WISŁA KRAKÓW - Nieokreślony Przeciwnik",
+      "date": null,
       "tickets": 7186
     }
   ]
