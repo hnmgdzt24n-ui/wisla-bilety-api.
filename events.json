@@ -1,23 +1,4 @@
 {
-  "updated": "15.07.2026, 01:13:02",
-  "events": [
-    {
-      "id": "KARNETY_EKSTRAKLASA_1",
-      "title": "Wisła Kraków - Karnety na Ekstraklasę (Druga Tura)",
-      "date": null,
-      "tickets": 277
-    },
-    {
-      "id": "KARNETY_EKSTRAKLASA_2",
-      "title": "Wisła Kraków - Karnety na Ekstraklasę (Druga Tura)",
-      "date": null,
-      "tickets": 98
-    },
-    {
-      "id": "KARNETY_EKSTRAKLASA_3",
-      "title": "Wisła Kraków - Karnety na Ekstraklasę (Druga Tura)",
-      "date": null,
-      "tickets": 7186
-    }
-  ]
+  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "events": []
 }
