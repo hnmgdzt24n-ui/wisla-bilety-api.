@@ -1,23 +1,4 @@
 {
-  "updated": "15.07.2026, 23:02:55",
-  "events": [
-    {
-      "id": "WISLA_KRAKOW_SEASON_PASS_EKSTRAKLASA_DRUGA_TURA_BEZ_MECZU_1",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę, Druga Tura (bez meczu 1. kolejki)",
-      "date": "2024-08-01T00:00:00",
-      "tickets": 279
-    },
-    {
-      "id": "WISLA_KRAKOW_SEASON_PASS_EKSTRAKLASA_DRUGA_TURA_RSVP",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę, Druga Tura (RSVP z potwierdzeniem obecności)",
-      "date": "2024-08-01T00:00:00",
-      "tickets": 98
-    },
-    {
-      "id": "WISLA_KRAKOW_SEASON_PASS_EKSTRAKLASA_JUZ_DOSTEPNE",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę - Już Dostępne",
-      "date": "2024-08-01T00:00:00",
-      "tickets": 7186
-    }
-  ]
+  "updated": "16.07.2026, 00:13:45",
+  "events": []
 }
