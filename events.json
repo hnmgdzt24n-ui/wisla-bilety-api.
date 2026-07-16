@@ -1,4 +1,23 @@
 {
-  "updated": "17.07.2026, 00:29:37",
-  "events": []
+  "updated": "17.07.2026, 01:29:56",
+  "events": [
+    {
+      "id": "KARNETY_EKSTRAKLASA_SPRZEDANE_286",
+      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów Ekstraklasa (Druga Tura)",
+      "date": "1970-01-01T00:00:00",
+      "tickets": 286
+    },
+    {
+      "id": "KARNETY_EKSTRAKLASA_SPRZEDANE_107",
+      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów Ekstraklasa (Druga Tura)",
+      "date": "1970-01-01T00:00:00",
+      "tickets": 107
+    },
+    {
+      "id": "KARNETY_EKSTRAKLASA_SPRZEDANE_7188",
+      "title": "WISŁA KRAKÓW - Sprzedaż Karnetów Ekstraklasa (Druga Tura)",
+      "date": "1970-01-01T00:00:00",
+      "tickets": 7188
+    }
+  ]
 }
