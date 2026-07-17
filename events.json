@@ -1,4 +1,23 @@
 {
-  "updated": "17.07.2026, 16:04:23",
-  "events": []
+  "updated": "17.07.2026, 17:41:36",
+  "events": [
+    {
+      "id": "KARNETY_EKSTRAKLASA_CAMPAIGN_1",
+      "title": "Wisła Kraków - Karnety na Ekstraklasę (Kampania 1)",
+      "date": "2024-07-01T00:00:00",
+      "tickets": 290
+    },
+    {
+      "id": "KARNETY_EKSTRAKLASA_CAMPAIGN_2",
+      "title": "Wisła Kraków - Karnety na Ekstraklasę (Kampania 2, RSVP)",
+      "date": "2024-07-01T00:00:00",
+      "tickets": 111
+    },
+    {
+      "id": "KARNETY_EKSTRAKLASA_CAMPAIGN_3",
+      "title": "Wisła Kraków - Karnety na Ekstraklasę (Kampania 3, Dostępne)",
+      "date": "2024-07-01T00:00:00",
+      "tickets": 7188
+    }
+  ]
 }
