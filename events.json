@@ -1,21 +1,21 @@
 {
-  "updated": "17.07.2026, 12:55:28",
+  "updated": "17.07.2026, 14:11:23",
   "events": [
     {
-      "id": "KARNETY_1",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę! Druga Tura",
+      "id": "karnety_ekstraklasa_tura_2_banner_1",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę: Druga Tura",
       "date": null,
       "tickets": 287
     },
     {
-      "id": "KARNETY_2",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę! RSVP - Druga Tura",
+      "id": "karnety_ekstraklasa_tura_2_banner_2",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę: Druga Tura",
       "date": null,
       "tickets": 111
     },
     {
-      "id": "KARNETY_3",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę! Już Dostępne",
+      "id": "karnety_ekstraklasa_dostepne_banner_3",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę: Już Dostępne",
       "date": null,
       "tickets": 7188
     }
