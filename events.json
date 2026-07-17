@@ -1,4 +1,23 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "17.07.2026, 06:26:27",
+  "events": [
+    {
+      "id": "WISLA_KRAKOW_KARNETY_EKSTRAKLASA_DRUGA_TURA_1",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę (Druga Tura)",
+      "date": "2024-07-01T00:00:00",
+      "tickets": 286
+    },
+    {
+      "id": "WISLA_KRAKOW_KARNETY_EKSTRAKLASA_DRUGA_TURA_RSVP_1",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę (Druga Tura RSVP)",
+      "date": "2024-07-01T00:00:00",
+      "tickets": 107
+    },
+    {
+      "id": "WISLA_KRAKOW_KARNETY_EKSTRAKLASA_DOSTEPNE_1",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę (Już Dostępne)",
+      "date": "2024-07-01T00:00:00",
+      "tickets": 7188
+    }
+  ]
 }
