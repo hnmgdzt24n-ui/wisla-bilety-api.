@@ -1,4 +1,23 @@
 {
-  "updated": "18.07.2026, 18:00:25",
-  "events": []
+  "updated": "18.07.2026, 19:07:42",
+  "events": [
+    {
+      "id": "SEASON_TICKETS_ROUND2_1",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę! Druga tura (bez meczu 1. kolejki)",
+      "date": null,
+      "tickets": 295
+    },
+    {
+      "id": "SEASON_TICKETS_ROUND2_2_RSVP",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę! RSVP z potwierdzeniem obecności (bez meczu 1. kolejki)",
+      "date": null,
+      "tickets": 112
+    },
+    {
+      "id": "SEASON_TICKETS_AVAILABLE",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę! Już dostępne!",
+      "date": null,
+      "tickets": 7188
+    }
+  ]
 }
