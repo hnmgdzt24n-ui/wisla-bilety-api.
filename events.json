@@ -1,4 +1,23 @@
 {
-  "updated": "19.07.2026, 18:02:47",
-  "events": []
+  "updated": "19.07.2026, 19:16:41",
+  "events": [
+    {
+      "id": "KARNETY_EKSTRAKLASA_DRUGA_TURA_1",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę - Druga Tura (bez meczu 1. kolejki)",
+      "date": "1970-01-01T00:00:00",
+      "tickets": 306
+    },
+    {
+      "id": "KARNETY_EKSTRAKLASA_DRUGA_TURA_RSVP",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę - RSVP z potwierdzeniem obecności (Druga Tura)",
+      "date": "1970-01-01T00:00:00",
+      "tickets": 112
+    },
+    {
+      "id": "KARNETY_EKSTRAKLASA_JUZ_DOSTĘPNE",
+      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę - Już Dostępne!",
+      "date": "1970-01-01T00:00:00",
+      "tickets": 7188
+    }
+  ]
 }
