@@ -1,23 +1,4 @@
 {
-  "updated": "19.07.2026, 23:35:48",
-  "events": [
-    {
-      "id": "SEASON_TICKET_CAMPAIGN_1",
-      "title": "WISŁA KRAKÓW - KARNETY NA EKSTRAKLASĘ",
-      "date": "",
-      "tickets": 306
-    },
-    {
-      "id": "SEASON_TICKET_CAMPAIGN_2",
-      "title": "WISŁA KRAKÓW - KARNETY NA EKSTRAKLASĘ",
-      "date": "",
-      "tickets": 112
-    },
-    {
-      "id": "SEASON_TICKET_CAMPAIGN_3",
-      "title": "WISŁA KRAKÓW - KARNETY NA EKSTRAKLASĘ",
-      "date": "",
-      "tickets": 7188
-    }
-  ]
+  "updated": "20.07.2026, 00:35:36",
+  "events": []
 }
