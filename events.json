@@ -1,4 +1,23 @@
 {
-  "updated": "20.07.2026, 06:55:10",
-  "events": []
+  "updated": "20.07.2026, 10:07:39",
+  "events": [
+    {
+      "id": "WISLA_KRAKOW_KARNETY_EKSTRAKLASA_1",
+      "title": "WISŁA KRAKÓW - Mecze Ekstraklasy (Sprzedaż Karnetów)",
+      "date": "2024-07-01T10:00:00",
+      "tickets": 306
+    },
+    {
+      "id": "WISLA_KRAKOW_KARNETY_EKSTRAKLASA_2",
+      "title": "WISŁA KRAKÓW - Mecze Ekstraklasy (Sprzedaż Karnetów)",
+      "date": "2024-07-01T10:00:00",
+      "tickets": 112
+    },
+    {
+      "id": "WISLA_KRAKOW_KARNETY_EKSTRAKLASA_3",
+      "title": "WISŁA KRAKÓW - Mecze Ekstraklasy (Sprzedaż Karnetów)",
+      "date": "2024-07-01T10:00:00",
+      "tickets": 7188
+    }
+  ]
 }
