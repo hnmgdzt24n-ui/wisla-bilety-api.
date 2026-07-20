@@ -1,23 +1,4 @@
 {
-  "updated": "20.07.2026, 03:14:35",
-  "events": [
-    {
-      "id": "karnety_1",
-      "title": "WISŁA KRAKÓW - KARNETY NA EKSTRAKLASĘ! DRUGA TURA (BEZ MECZU 1. KOLEJKI)",
-      "date": "2024-07-01T00:00:00",
-      "tickets": 306
-    },
-    {
-      "id": "karnety_2",
-      "title": "WISŁA KRAKÓW - KARNETY NA EKSTRAKLASĘ! DRUGA TURA (BEZ MECZU 1. KOLEJKI) - Z POTWIERDZENIEM OBECNOŚCI (RSVP)",
-      "date": "2024-07-01T00:00:00",
-      "tickets": 112
-    },
-    {
-      "id": "karnety_3",
-      "title": "WISŁA KRAKÓW - KARNETY NA EKSTRAKLASĘ! JUŻ DOSTĘPNE!",
-      "date": "2024-07-01T00:00:00",
-      "tickets": 7188
-    }
-  ]
+  "updated": "20.07.2026, 06:55:10",
+  "events": []
 }
