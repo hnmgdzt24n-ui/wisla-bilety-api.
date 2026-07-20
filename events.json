@@ -1,23 +1,17 @@
 {
-  "updated": "20.07.2026, 15:19:05",
+  "updated": "20.07.2026, 17:28:46",
   "events": [
     {
-      "id": "WISLA_KARNETY_1",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę - Druga Tura",
-      "date": "2026-07-01T00:00:00",
-      "tickets": 307
+      "id": "WISLA_PLOCK",
+      "title": "WISŁA KRAKÓW - WISŁA PŁOCK",
+      "date": "2026-08-07T20:30:00",
+      "tickets": 11006
     },
     {
-      "id": "WISLA_KARNETY_2",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę - Druga Tura RSVP",
-      "date": "2026-07-01T00:00:00",
-      "tickets": 112
-    },
-    {
-      "id": "WISLA_KARNETY_3",
-      "title": "WISŁA KRAKÓW - Karnety na Ekstraklasę - Już Dostępne",
-      "date": "2026-07-01T00:00:00",
-      "tickets": 7188
+      "id": "GKS_KATOWICE",
+      "title": "WISŁA KRAKÓW - GKS KATOWICE",
+      "date": "2026-07-26T20:15:00",
+      "tickets": 26238
     }
   ]
 }
