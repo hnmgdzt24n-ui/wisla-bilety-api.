@@ -1,17 +1,17 @@
 {
-  "updated": "21.07.2026, 14:54:42",
+  "updated": "21.07.2026, 17:04:45",
   "events": [
     {
-      "id": "WISLA_PLOCK",
+      "id": "match_1",
       "title": "WISŁA KRAKÓW - WISŁA PŁOCK",
       "date": "2026-08-07T20:30:00",
-      "tickets": 11731
+      "tickets": 11799
     },
     {
-      "id": "GKS_KATOWICE",
+      "id": "match_2",
       "title": "WISŁA KRAKÓW - GKS KATOWICE",
       "date": "2026-07-26T20:15:00",
-      "tickets": 26563
+      "tickets": 26682
     }
   ]
 }
