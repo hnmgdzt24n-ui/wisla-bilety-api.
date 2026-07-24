@@ -1,4 +1,17 @@
 {
-  "updated": "Błąd Vision: Expected ',' or '}' after property value in JSON at position 171 (line 8 column 5)",
-  "events": []
+  "updated": "25.07.2026, 01:33:35",
+  "events": [
+    {
+      "id": "match_1",
+      "title": "WISŁA KRAKÓW - WISŁA PŁOCK",
+      "date": "2026-08-07T20:30:00",
+      "tickets": 18045
+    },
+    {
+      "id": "match_2",
+      "title": "WISŁA KRAKÓW - GKS KATOWICE",
+      "date": "2026-07-26T20:15:00",
+      "tickets": 29754
+    }
+  ]
 }
