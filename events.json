@@ -1,4 +1,4 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "updated": "Błąd Vision: Expected ',' or '}' after property value in JSON at position 171 (line 8 column 5)",
   "events": []
 }
