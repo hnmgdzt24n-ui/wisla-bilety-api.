@@ -1,4 +1,17 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "25.07.2026, 20:27:19",
+  "events": [
+    {
+      "id": "event_1",
+      "title": "WISŁA KRAKÓW - WISŁA PŁOCK",
+      "date": "2026-08-07T20:30:00",
+      "tickets": 18470
+    },
+    {
+      "id": "event_2",
+      "title": "WISŁA KRAKÓW - GKS KATOWICE",
+      "date": "2026-07-26T20:15:00",
+      "tickets": 30022
+    }
+  ]
 }
