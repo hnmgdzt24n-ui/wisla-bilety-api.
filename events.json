@@ -1,4 +1,11 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "30.07.2026, 13:29:27",
+  "events": [
+    {
+      "id": "wisla_krakow_vs_wisla_plock",
+      "title": "WISŁA KRAKÓW - WISŁA PŁOCK",
+      "date": "2026-08-07T20:30:00",
+      "tickets": 24401
+    }
+  ]
 }
