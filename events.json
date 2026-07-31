@@ -1,11 +1,11 @@
 {
-  "updated": "31.07.2026, 08:46:20",
+  "updated": "31.07.2026, 11:46:32",
   "events": [
     {
-      "id": "MECZ_1",
+      "id": "MECZ_ID",
       "title": "WISŁA KRAKÓW - WISŁA PŁOCK",
       "date": "2026-08-07T20:30:00",
-      "tickets": 24931
+      "tickets": 25057
     }
   ]
 }
