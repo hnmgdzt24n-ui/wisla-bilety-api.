@@ -1,11 +1,11 @@
 {
-  "updated": "1.08.2026, 03:15:32",
+  "updated": "1.08.2026, 06:41:26",
   "events": [
     {
-      "id": "WISLA_KRAKOW_WISLA_PLOCK_20260807",
+      "id": "wisla_krakow-wisla_plock",
       "title": "WISŁA KRAKÓW - WISŁA PŁOCK",
       "date": "2026-08-07T20:30:00",
-      "tickets": 25528
+      "tickets": 25533
     }
   ]
 }
