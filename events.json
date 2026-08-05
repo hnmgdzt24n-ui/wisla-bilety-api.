@@ -1,17 +1,17 @@
 {
-  "updated": "5.08.2026, 22:27:50",
+  "updated": "5.08.2026, 23:50:18",
   "events": [
     {
-      "id": "WISLA_PLOCK",
-      "title": "WISŁA KRAKÓW - WISŁA PŁOCK",
+      "id": "WISLA_KRAKOW_VS_WISLA_PLOCK_20260807",
+      "title": "WISŁA KRAKÓW - WISŁA Płock",
       "date": "2026-08-07T20:30:00",
-      "tickets": 29802
+      "tickets": 29829
     },
     {
-      "id": "WIECZYSTA_KRAKOW",
-      "title": "WISŁA KRAKÓW - WIECZYSTA KRAKÓW",
+      "id": "WISLA_KRAKOW_VS_WIECZYSTA_KRAKOW_20260829",
+      "title": "WISŁA KRAKÓW - WIECZYSTA Kraków",
       "date": "2026-08-29T17:30:00",
-      "tickets": 12343
+      "tickets": 12369
     }
   ]
 }
