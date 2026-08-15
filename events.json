@@ -1,11 +1,11 @@
 {
-  "updated": "15.08.2026, 10:32:20",
+  "updated": "15.08.2026, 11:02:41",
   "events": [
     {
-      "id": "WISLA_KRAKOW_WIECZYSTA_KRAKOW",
-      "title": "WISŁA KRAKÓW - WIECZYSTA Kraków",
+      "id": "WISLA_WIECZYSTA",
+      "title": "WISŁA KRAKÓW - WIECZYSTA KRAKÓW",
       "date": "2026-08-29T17:30:00",
-      "tickets": 27210
+      "tickets": 27209
     }
   ]
 }
