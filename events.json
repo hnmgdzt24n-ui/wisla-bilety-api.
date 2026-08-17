@@ -1,4 +1,11 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "17.08.2026, 15:53:17",
+  "events": [
+    {
+      "id": "WISLA_KRAKOW_VS_WIECZYSTA_KRAKOW",
+      "title": "WISŁA KRAKÓW - WIECZYSTA Kraków",
+      "date": "2026-08-29T17:30:00",
+      "tickets": 27417
+    }
+  ]
 }
