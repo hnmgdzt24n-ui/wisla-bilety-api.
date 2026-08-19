@@ -1,4 +1,17 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "19.08.2026, 19:03:23",
+  "events": [
+    {
+      "id": "match_1",
+      "title": "WISŁA KRAKÓW - WIECZYSTA KRAKÓW",
+      "date": "2026-08-29T17:30:00",
+      "tickets": 27630
+    },
+    {
+      "id": "match_2",
+      "title": "WISŁA KRAKÓW - JAGIELLONIA BIAŁYSTOK",
+      "date": "2026-09-11T20:30:00",
+      "tickets": 12678
+    }
+  ]
 }
