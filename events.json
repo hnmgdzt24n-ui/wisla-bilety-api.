@@ -1,17 +1,4 @@
 {
-  "updated": "20.08.2026, 23:56:21",
-  "events": [
-    {
-      "id": "WISLA_KRAKOW_WIECZYSTA_KRAKOW_2026-08-29",
-      "title": "WISŁA KRAKÓW - WIECZYSTA Kraków",
-      "date": "2026-08-29T17:30:00",
-      "tickets": 27813
-    },
-    {
-      "id": "WISLA_KRAKOW_JAGIELLONIA_BIALYSTOK_2026-09-11",
-      "title": "WISŁA KRAKÓW - JAGIELLONIA Białystok",
-      "date": "2026-09-11T20:30:00",
-      "tickets": 21735
-    }
-  ]
+  "updated": "Błąd Vision: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 45.453236307s.",
+  "events": []
 }
