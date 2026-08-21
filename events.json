@@ -1,17 +1,17 @@
 {
-  "updated": "21.08.2026, 02:00:42",
+  "updated": "21.08.2026, 03:57:54",
   "events": [
     {
-      "id": "match_1",
+      "id": "WISLA_WIECZYSTA",
       "title": "WISŁA KRAKÓW - WIECZYSTA KRAKÓW",
       "date": "2026-08-29T17:30:00",
       "tickets": 27817
     },
     {
-      "id": "match_2",
+      "id": "WISLA_JAGIELLONIA",
       "title": "WISŁA KRAKÓW - JAGIELLONIA BIAŁYSTOK",
       "date": "2026-09-11T20:30:00",
-      "tickets": 21828
+      "tickets": 21838
     }
   ]
 }
