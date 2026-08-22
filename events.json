@@ -1,23 +1,4 @@
 {
-  "updated": "22.08.2026, 15:20:08",
-  "events": [
-    {
-      "id": "WISLA_vs_WIECZYSTA",
-      "title": "WISŁA KRAKÓW - WIECZYSTA KRAKÓW",
-      "date": "2026-08-29T17:30:00",
-      "tickets": 27982
-    },
-    {
-      "id": "WISLA_vs_JAGIELLONIA",
-      "title": "WISŁA KRAKÓW - JAGIELLONIA BIAŁYSTOK",
-      "date": "2026-09-11T20:30:00",
-      "tickets": 24269
-    },
-    {
-      "id": "WISLA_vs_SLASK",
-      "title": "WISŁA KRAKÓW - ŚLĄSK WROCŁAW",
-      "date": "2026-09-18T20:30:00",
-      "tickets": 12971
-    }
-  ]
+  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "events": []
 }
