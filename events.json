@@ -1,11 +1,11 @@
 {
-  "updated": "24.08.2026, 19:16:55",
+  "updated": "24.08.2026, 19:58:23",
   "events": [
     {
       "id": "match_1",
       "title": "WISŁA KRAKÓW - WIECZYSTA KRAKÓW",
       "date": "2026-08-29T17:30:00",
-      "tickets": 28182
+      "tickets": 28189
     },
     {
       "id": "match_2",
@@ -17,7 +17,7 @@
       "id": "match_3",
       "title": "WISŁA KRAKÓW - ŚLĄSK WROCŁAW",
       "date": "2026-09-18T20:30:00",
-      "tickets": 18160
+      "tickets": 18199
     }
   ]
 }
