@@ -1,23 +1,23 @@
 {
-  "updated": "26.08.2026, 08:18:21",
+  "updated": "26.08.2026, 09:26:04",
   "events": [
     {
-      "id": "WIECZYSTA",
-      "title": "WISŁA KRAKÓW - WIECZYSTA",
+      "id": "MECZ_WIECZYSTA",
+      "title": "WISŁA KRAKÓW - WIECZYSTA Kraków",
       "date": "2026-08-29T17:30:00",
-      "tickets": 29083
+      "tickets": 29145
     },
     {
-      "id": "JAGIELLONIA",
-      "title": "WISŁA KRAKÓW - JAGIELLONIA",
+      "id": "MECZ_JAGIELLONIA",
+      "title": "WISŁA KRAKÓW - JAGIELLONIA Białystok",
       "date": "2026-09-11T20:30:00",
-      "tickets": 24849
+      "tickets": 24854
     },
     {
-      "id": "SLASK",
-      "title": "WISŁA KRAKÓW - ŚLĄSK",
+      "id": "MECZ_SLASK",
+      "title": "WISŁA KRAKÓW - ŚLĄSK Wrocław",
       "date": "2026-09-18T20:30:00",
-      "tickets": 19072
+      "tickets": 19102
     }
   ]
 }
