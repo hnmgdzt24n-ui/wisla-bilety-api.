@@ -1,4 +1,17 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "31.08.2026, 02:55:07",
+  "events": [
+    {
+      "id": "WISLA_KRAKOW_JAGIELLONIA_BIALYSTOK",
+      "title": "WISŁA KRAKÓW - JAGIELLONIA BIAŁYSTOK",
+      "date": "2026-09-11T20:30:00",
+      "tickets": 25267
+    },
+    {
+      "id": "WISLA_KRAKOW_SLASK_WROCLAW",
+      "title": "WISŁA KRAKÓW - ŚLĄSK WROCŁAW",
+      "date": "2026-09-18T20:30:00",
+      "tickets": 22225
+    }
+  ]
 }
