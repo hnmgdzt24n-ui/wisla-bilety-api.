@@ -1,17 +1,4 @@
 {
-  "updated": "2.09.2026, 01:19:20",
-  "events": [
-    {
-      "id": "match_1",
-      "title": "WISŁA KRAKÓW - JAGIELLONIA BIAŁYSTOK",
-      "date": "2026-09-11T20:30:00",
-      "tickets": 26538
-    },
-    {
-      "id": "match_2",
-      "title": "WISŁA KRAKÓW - ŚLĄSK WROCŁAW",
-      "date": "2026-09-18T20:30:00",
-      "tickets": 23124
-    }
-  ]
+  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "events": []
 }
