@@ -1,4 +1,23 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "4.09.2026, 01:27:16",
+  "events": [
+    {
+      "id": "MECZ_ID_1",
+      "title": "WISŁA KRAKÓW - Legends & Friends vs Old Boys",
+      "date": "2026-09-26T11:00:00",
+      "tickets": 2014
+    },
+    {
+      "id": "MECZ_ID_2",
+      "title": "WISŁA KRAKÓW - JAGIELLONIA Białystok",
+      "date": "2026-09-11T20:30:00",
+      "tickets": 26977
+    },
+    {
+      "id": "MECZ_ID_3",
+      "title": "WISŁA KRAKÓW - ŚLĄSK Wrocław",
+      "date": "2026-09-18T20:30:00",
+      "tickets": 23632
+    }
+  ]
 }
