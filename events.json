@@ -1,17 +1,17 @@
 {
-  "updated": "9.09.2026, 03:34:30",
+  "updated": "9.09.2026, 08:43:47",
   "events": [
     {
-      "id": "event_1",
-      "title": "WISŁA KRAKÓW - LEGENDS & FRIENDS vs OLD BOYS",
+      "id": "MECZ_ID_1",
+      "title": "WISŁA Legends & Friends - WISŁA OldBoys",
       "date": "2026-09-26T11:00:00",
       "tickets": 2650
     },
     {
-      "id": "event_2",
+      "id": "MECZ_ID_2",
       "title": "WISŁA KRAKÓW - JAGIELLONIA BIAŁYSTOK",
       "date": "2026-09-11T20:30:00",
-      "tickets": 28271
+      "tickets": 28273
     }
   ]
 }
