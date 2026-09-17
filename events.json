@@ -1,17 +1,17 @@
 {
-  "updated": "17.09.2026, 08:09:27",
+  "updated": "17.09.2026, 13:43:32",
   "events": [
     {
-      "id": "event_1",
-      "title": "WISŁA KRAKÓW - Legends & Friends vs Old Boys",
+      "id": "MECZ_1",
+      "title": "WISŁA KRAKÓW - LEGENDS & FRIENDS VS OLD BOYS",
       "date": "2026-09-26T11:00:00",
-      "tickets": 3536
+      "tickets": 3578
     },
     {
-      "id": "event_2",
+      "id": "MECZ_2",
       "title": "WISŁA KRAKÓW - ŚLĄSK WROCŁAW",
       "date": "2026-09-18T20:30:00",
-      "tickets": 30720
+      "tickets": 31133
     }
   ]
 }
