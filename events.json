@@ -1,17 +1,17 @@
 {
-  "updated": "23.09.2026, 08:26:36",
+  "updated": "23.09.2026, 13:59:52",
   "events": [
     {
-      "id": "WISLA_LEGENDS_VS_OLD_BOYS",
-      "title": "WISŁA KRAKÓW - WISŁA Old Boys",
+      "id": "match_1",
+      "title": "WISŁA KRAKÓW - WISŁA Legends & Friends vs WISŁA Old Boys",
       "date": "2026-09-26T11:00:00",
-      "tickets": 4507
+      "tickets": 4564
     },
     {
-      "id": "WISLA_VS_RAKOW",
+      "id": "match_2",
       "title": "WISŁA KRAKÓW - RAKÓW Częstochowa",
       "date": "2026-10-24T20:15:00",
-      "tickets": 24209
+      "tickets": 24228
     }
   ]
 }
