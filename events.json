@@ -1,17 +1,11 @@
 {
-  "updated": "26.09.2026, 09:43:58",
+  "updated": "26.09.2026, 14:29:44",
   "events": [
     {
-      "id": "match_1",
-      "title": "WISŁA KRAKÓW - WISŁA Old Boys",
-      "date": "2026-09-26T11:00:00",
-      "tickets": 6120
-    },
-    {
-      "id": "match_2",
-      "title": "WISŁA KRAKÓW - RAKÓW Częstochowa",
+      "id": "WISLA_RAKOW_20261024",
+      "title": "WISŁA KRAKÓW - RAKÓW CZĘSTOCHOWA",
       "date": "2026-10-24T20:15:00",
-      "tickets": 24532
+      "tickets": 24540
     }
   ]
 }
