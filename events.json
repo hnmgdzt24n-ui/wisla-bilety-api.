@@ -1,4 +1,11 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "28.09.2026, 17:29:39",
+  "events": [
+    {
+      "id": "WISLA_RAKOW",
+      "title": "WISŁA KRAKÓW - RAKÓW CZĘSTOCHOWA",
+      "date": "2026-10-24T20:15:00",
+      "tickets": 24705
+    }
+  ]
 }
