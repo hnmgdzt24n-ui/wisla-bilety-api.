@@ -1,4 +1,11 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "8.10.2026, 08:06:52",
+  "events": [
+    {
+      "id": "MECZ_001",
+      "title": "WISŁA KRAKÓW - RAKÓW CZĘSTOCHOWA",
+      "date": "2026-10-24T20:15:00",
+      "tickets": 25725
+    }
+  ]
 }
