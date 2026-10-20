@@ -1,17 +1,4 @@
 {
-  "updated": "20.10.2026, 11:21:07",
-  "events": [
-    {
-      "id": "WISLA_RAKOW_20261024",
-      "title": "WISŁA KRAKÓW - RAKÓW",
-      "date": "2026-10-24T20:15:00",
-      "tickets": 29949
-    },
-    {
-      "id": "WISLA_CRACOVIA_20261106",
-      "title": "WISŁA KRAKÓW - CRACOVIA",
-      "date": "2026-11-06T20:30:00",
-      "tickets": 24962
-    }
-  ]
+  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "events": []
 }
