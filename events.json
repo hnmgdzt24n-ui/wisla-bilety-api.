@@ -1,17 +1,4 @@
 {
-  "updated": "22.10.2026, 13:22:56",
-  "events": [
-    {
-      "id": "WISLA_RAKOW",
-      "title": "WISŁA KRAKÓW - RAKÓW Częstochowa",
-      "date": "2026-10-24T20:15:00",
-      "tickets": 0
-    },
-    {
-      "id": "WISLA_CRACOVIA",
-      "title": "WISŁA KRAKÓW - CRACOVIA",
-      "date": "2026-11-06T20:30:00",
-      "tickets": 0
-    }
-  ]
+  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "events": []
 }
