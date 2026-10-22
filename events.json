@@ -1,14 +1,14 @@
 {
-  "updated": "22.10.2026, 07:50:48",
+  "updated": "22.10.2026, 13:22:56",
   "events": [
     {
-      "id": "match_1",
-      "title": "WISŁA KRAKÓW - RAKÓW CZĘSTOCHOWA",
+      "id": "WISLA_RAKOW",
+      "title": "WISŁA KRAKÓW - RAKÓW Częstochowa",
       "date": "2026-10-24T20:15:00",
       "tickets": 0
     },
     {
-      "id": "match_2",
+      "id": "WISLA_CRACOVIA",
       "title": "WISŁA KRAKÓW - CRACOVIA",
       "date": "2026-11-06T20:30:00",
       "tickets": 0
