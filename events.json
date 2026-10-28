@@ -1,4 +1,11 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "28.10.2026, 23:58:40",
+  "events": [
+    {
+      "id": "Wislakrakow_Cracovia",
+      "title": "WISŁA KRAKÓW - CRACOVIA",
+      "date": "2026-11-06T20:30:00",
+      "tickets": 0
+    }
+  ]
 }
