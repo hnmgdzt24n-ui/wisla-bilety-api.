@@ -1,11 +1,11 @@
 {
-  "updated": "30.10.2026, 23:50:34",
+  "updated": "31.10.2026, 03:06:20",
   "events": [
     {
-      "id": "WISLA_CRACOVIA",
+      "id": "wisla_cracovia_20261106",
       "title": "WISŁA KRAKÓW - CRACOVIA",
       "date": "2026-11-06T20:30:00",
-      "tickets": 1906
+      "tickets": 12345
     }
   ]
 }
