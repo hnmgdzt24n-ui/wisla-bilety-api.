@@ -1,4 +1,11 @@
 {
-  "updated": "2.11.2026, 03:19:08",
-  "events": []
+  "updated": "2.11.2026, 10:49:45",
+  "events": [
+    {
+      "id": "1",
+      "title": "WISŁA KRAKÓW - CRACOVIA",
+      "date": "2026-11-06T20:30:00",
+      "tickets": 0
+    }
+  ]
 }
