@@ -1,11 +1,11 @@
 {
-  "updated": "3.11.2026, 10:54:10",
+  "updated": "3.11.2026, 18:37:19",
   "events": [
     {
-      "id": "WISLA_MOTOR",
-      "title": "WISŁA KRAKÓW - MOTOR Lublin",
+      "id": "motor_lublin",
+      "title": "WISŁA KRAKÓW - MOTOR LUBLIN",
       "date": "2026-11-28T20:15:00",
-      "tickets": 12585
+      "tickets": 13830
     }
   ]
 }
