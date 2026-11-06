@@ -1,17 +1,17 @@
 {
-  "updated": "6.11.2026, 07:49:41",
+  "updated": "6.11.2026, 15:50:49",
   "events": [
     {
-      "id": "CRACOVIA-20261106",
+      "id": "match_1",
       "title": "WISŁA KRAKÓW - CRACOVIA",
       "date": "2026-11-06T20:30:00",
       "tickets": null
     },
     {
-      "id": "MOTOR-20261128",
+      "id": "match_2",
       "title": "WISŁA KRAKÓW - MOTOR Lublin",
       "date": "2026-11-28T20:15:00",
-      "tickets": 21239
+      "tickets": 21572
     }
   ]
 }
