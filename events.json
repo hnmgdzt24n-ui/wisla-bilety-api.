@@ -1,11 +1,11 @@
 {
-  "updated": "9.11.2026, 21:46:21",
+  "updated": "10.11.2026, 04:16:58",
   "events": [
     {
-      "id": "motor_lublin",
+      "id": "MECZ_ID",
       "title": "WISŁA KRAKÓW - MOTOR Lublin",
       "date": "2026-11-28T20:15:00",
-      "tickets": 22426
+      "tickets": 22439
     }
   ]
 }
