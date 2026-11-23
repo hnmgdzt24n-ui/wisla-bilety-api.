@@ -1,4 +1,11 @@
 {
-  "updated": "Błąd Vision: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "events": []
+  "updated": "23.11.2026, 15:41:04",
+  "events": [
+    {
+      "id": "WISLA_KRAKOW_MOTOR_LUBLIN",
+      "title": "WISŁA KRAKÓW - MOTOR Lublin",
+      "date": "2026-11-28T20:15:00",
+      "tickets": 26888
+    }
+  ]
 }
